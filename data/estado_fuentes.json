@@ -1,0 +1,11 @@
+{
+  "revision_utc": null,
+  "estado": "pendiente_primera_ejecucion",
+  "fuente": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
+  "boletines_detectados": [],
+  "nuevos_boletines": [],
+  "boletines_2026_encontrados": [],
+  "errores": [],
+  "actualizacion_indicadores_2026": "pendiente: exportacion validada o descarga oficial estructurada",
+  "advertencia": "Monitoreo diario de publicaciones. NO se extraen automáticamente cifras de las vistas Power BI ni se actualizan las tarjetas hasta validarlas."
+}
