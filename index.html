@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Observatorio del mercado asegurador de Costa Rica con datos públicos trazables de SUGESE">
+<title>Observatorio Asegurador CR | SUGESE</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1220;--panel:#172438;--panel2:#101b2c;--line:#2a3b52;--text:#f3f7fd;--muted:#a9bdd2;--accent:#63c6e5;--positive:#8be2ba;--negative:#ff9d9b}*{box-sizing:border-box}body{margin:0;background:var(--bg);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;color:var(--text)}a{color:var(--accent)}button,select{font:inherit;cursor:pointer}button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}.layout{max-width:1400px;margin:0 auto;padding:24px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:22px;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px}.mark{display:grid;place-items:center;background:#145376;border:1px solid #3388a6;border-radius:14px;width:48px;height:48px;font-weight:800;font-size:22px}.brand strong{font-size:21px}.muted,.sub{color:var(--muted)}.sub{font-size:12px}.status{border:1px solid #4b7083;border-radius:99px;padding:8px 13px;color:#d7eff8;background:#153245}.hero{padding:28px 0 16px}.hero h1{font-size:clamp(24px,3vw,37px);margin:5px 0 8px;letter-spacing:-.03em}.hero p{margin:0;color:var(--muted)}.warning{margin:16px 0 22px;padding:14px 17px;background:#312917;color:#ffe2a7;border:1px solid #806434;border-radius:12px;font-size:13px}.sectiontitle{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin:18px 0 12px}.sectiontitle h2{font-size:19px;margin:0}.controls{display:flex;align-items:center;gap:9px}select,button{background:var(--panel);color:var(--text);padding:8px 12px;border:1px solid var(--line);border-radius:9px}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.card{padding:19px;border-radius:14px;border:1px solid var(--line);background:var(--panel)}.card .label{font-size:13px;color:var(--muted)}.card .value{font-size:clamp(22px,2.4vw,31px);letter-spacing:-.035em;font-weight:750;margin:11px 0 3px}.card .foot{font-size:13px;color:var(--muted)}.up{color:var(--positive)!important}.down{color:var(--negative)!important}.main{display:grid;grid-template-columns:1.15fr .85fr;gap:15px;margin-top:15px}.pane{background:var(--panel);border:1px solid var(--line);padding:19px;border-radius:14px;min-width:0}.pane h3{margin:0 0 4px;font-size:17px}.pane p{font-size:13px;color:var(--muted);margin:0 0 16px}.barrow{display:grid;grid-template-columns:146px 1fr 84px;align-items:center;gap:10px;padding:8px 0;font-size:13px}.bartrack{height:16px;background:#27374b;border-radius:4px;overflow:hidden}.barfill{height:100%;background:#4eaac8;border-radius:4px}.barfill.alt{background:#88cbb5}.barlabel{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.num{text-align:right;font-variant-numeric:tabular-nums}.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-top:12px}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#4eaac8;margin-right:6px}.dot.alt{background:#88cbb5}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:520px;font-variant-numeric:tabular-nums}th,td{padding:12px 11px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}th:first-child,td:first-child{text-align:left}th{font-size:12px;color:var(--muted);font-weight:650}td{font-size:13px}tbody tr:hover{background:#1d3047}.kpis{display:grid;grid-template-columns:1fr 1fr;gap:13px}.notice{border-left:3px solid var(--accent);padding:9px 12px;background:var(--panel2);font-size:13px;margin:7px 0;color:#d2e3f4}.sources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.source{border:1px solid var(--line);background:var(--panel2);border-radius:9px;padding:10px 12px;font-size:13px}.source small{display:block;color:var(--muted);font-size:11px}.footer{padding:26px 0;margin-top:20px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}.error{padding:30px;border:1px solid #ee8c8c;color:#ffc5c5;background:#3c2327;border-radius:14px}#app[hidden]{display:none}@media(max-width:900px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.main{grid-template-columns:1fr}.sources{grid-template-columns:1fr}}@media(max-width:550px){.layout{padding:14px}.cards{grid-template-columns:1fr 1fr;gap:8px}.card{padding:13px}.card .value{font-size:22px}.barrow{grid-template-columns:110px 1fr 65px;gap:6px;font-size:11px}.brand strong{font-size:16px}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="layout"><header class="top"><div class="brand"><div class="mark">CR</div><div><strong>Observatorio Asegurador</strong><div class="sub">Costa Rica · Inteligencia de mercado</div></div></div><span class="status">● Datos documentados · cierre 2025</span></header>
+<section class="hero"><div class="sub">SUGESE / INFORMACIÓN PÚBLICA</div><h1>Inteligencia del mercado asegurador</h1><p>Crecimiento, competencia, resultados y señales estratégicas con trazabilidad a la fuente oficial.</p></section>
+<div class="warning"><strong>Alcance:</strong> esta primera versión utiliza el boletín de diciembre de 2025 y comparativos 2024. No refleja el último reporte mensual de 2026, no tiene extracción automática desde SUGESE y no debe interpretarse como información en tiempo real.</div>
+<div id="loading" class="muted" role="status">Cargando datos oficiales de referencia…</div><div id="error" class="error" hidden role="alert"></div>
+<main id="app" hidden>
+<div class="sectiontitle"><h2>Panorama del mercado</h2><div class="controls"><label for="year">Corte:</label><select id="year"><option value="2025">2025</option><option value="2024">2024</option></select></div></div>
+<div class="cards" id="cards"></div>
+<div class="main">
+<section class="pane"><h3>Participación de mercado por aseguradora</h3><p>Cuota de primas emitidas · participación porcentual, incluye grupo «Otros».</p><div id="share"></div><div class="legend"><span><span class="dot"></span>Aseguradora / grupo</span><span>Fuentes: boletín oficial SUGESE</span></div></section>
+<section class="pane"><h3>Evolución de primas y siniestros</h3><p>Montos anuales redondeados · miles de millones de colones corrientes.</p><div id="comparativo"></div><p style="margin-top:14px">No interpretar pagos/primas como siniestralidad técnica: requiere primas devengadas y siniestros incurridos.</p></section>
+</div>
+<div class="main">
+<section class="pane"><div class="sectiontitle" style="margin-top:0"><h3>Resultados contables</h3><div class="controls"><button id="download" type="button">Exportar CSV</button></div></div><p>Millones de colones · resultado neto por entidad. No equivale al resultado técnico.</p><div class="tablewrap"><table><thead><tr><th>Aseguradora</th><th>2024</th><th>2025</th><th>Variación absoluta</th></tr></thead><tbody id="results"></tbody></table></div></section>
+<section class="pane"><h3>Lecturas estratégicas</h3><p>Observaciones de cierre anual; no son pronósticos.</p><div id="notes"></div><div class="kpis" style="margin-top:17px"><div class="notice"><strong>Calidad de datos</strong><br>Series anuales resumidas y montos redondeados; verificar con Excel oficial antes de análisis granular.</div><div class="notice"><strong>Precaución</strong><br>SUGESE revisó cifras entre dic-2024 y ago-2025 por ajustes contables del INS.</div></div></section>
+</div>
+<section class="pane" style="margin-top:15px"><div class="sectiontitle" style="margin-top:0"><h3>Catálogo de fuentes oficiales</h3><label class="sub" for="category">Área <select id="category"><option value="todas">Todas</option></select></label></div><p>Fuentes ubicadas en SUGESE. Que exista un reporte no significa que tengamos su base de datos automatizada.</p><div class="sources" id="sources"></div></section>
+</main>
+<footer class="footer">Proyecto independiente con información pública. No afiliado ni respaldado por SUGESE. Fuente: <a href="https://www.sugese.fi.cr/cr/es/estadisticas.html" target="_blank" rel="noopener noreferrer">estadísticas SUGESE</a> · <a href="https://www.sugese.fi.cr/seccion-estadistica/Boletines/boletin_dic_2025.pdf" target="_blank" rel="noopener noreferrer">boletín diciembre 2025</a>. Sin datos simulados.</footer>
+</div>
+<script>
+"use strict";
+const $=id=>document.getElementById(id);
+const money=new Intl.NumberFormat("es-CR",{minimumFractionDigits:1,maximumFractionDigits:1});
+const num=new Intl.NumberFormat("es-CR",{minimumFractionDigits:0,maximumFractionDigits:2});
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt=(n,d=1)=>Number(n).toLocaleString("es-CR",{minimumFractionDigits:d,maximumFractionDigits:d});
+const card=(label,value,foot,cls="")=>'<article class="card"><div class="label">'+esc(label)+'</div><div class="value '+cls+'">'+esc(value)+'</div><div class="foot">'+esc(foot)+'</div></article>';
+let market,catalog;
+function draw(){
+const year=Number($("year").value),row=market.anuales.find(x=>x.anio===year),previous=market.anuales.find(x=>x.anio===year-1),is2025=year===2025;
+$("cards").innerHTML=[
+card("Primas emitidas", "₡"+fmt(row.primas)+" mil MM",is2025?"+3,8% vs. 2024 (crecimiento oficial)":"Cierre 2024, sin variación comparativa aquí"),
+card("Siniestros pagados","₡"+fmt(row.siniestros_pagados)+" mil MM",is2025?"+10,2% vs. 2024 (crecimiento oficial)":"Cierre 2024, sin variación comparativa aquí"),
+card("Aseguradoras",fmt(row.aseguradoras,0), "Entidades activas"),
+card("Productos inscritos",fmt(row.productos,0),is2025?"−19 unidades vs. 2024":"Stock reportado 2024")
+].join("");
+const ranking=[...market.participaciones_mercado_pct].sort((a,b)=>b["p"+year]-a["p"+year]);
+$("share").innerHTML=ranking.map(a=>{const v=a["p"+year];return '<div class="barrow"><span class="barlabel" title="'+esc(a.aseguradora)+'">'+esc(a.aseguradora)+'</span><div class="bartrack"><div class="barfill '+(a.grupo?"alt":"")+'" style="width:'+Math.max(0,Math.min(100,v/70*100))+'%"></div></div><span class="num">'+fmt(v,2)+'%</span></div>'}).join("");
+$("comparativo").innerHTML=market.anuales.map(r=>{const max=1300;return '<div style="margin-bottom:20px"><strong>'+r.anio+'</strong><div class="barrow"><span>Primas</span><div class="bartrack"><div class="barfill" style="width:'+(r.primas/max*100)+'%"></div></div><span class="num">'+fmt(r.primas)+'</span></div><div class="barrow"><span>Siniestros</span><div class="bartrack"><div class="barfill alt" style="width:'+(r.siniestros_pagados/max*100)+'%"></div></div><span class="num">'+fmt(r.siniestros_pagados)+'</span></div></div>'}).join("");
+$("results").innerHTML=[...market.resultados_aseguradoras_millones].sort((a,b)=>b.r2025-a.r2025).map(r=>'<tr><td>'+esc(r.aseguradora)+'</td><td>'+fmt(r.r2024,2)+'</td><td>'+fmt(r.r2025,2)+'</td><td class="'+(r.r2025-r.r2024>=0?"up":"down")+'">'+fmt(r.r2025-r.r2024,2)+'</td></tr>').join("");
+$("notes").innerHTML=market.notas.map(n=>'<div class="notice"><strong>'+esc(n.titulo)+'</strong><div>'+esc(n.texto)+'</div></div>').join("");
+}
+function sources(){
+const area=$("category").value;
+$("sources").innerHTML=catalog.interactivos.filter(x=>area==="todas"||x.area===area).map(s=>'<div class="source"><a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.nombre)+'</a><small>'+esc(s.area)+' · Prioridad '+esc(s.prioridad)+' · Ingesta pendiente</small></div>').join("");
+}
+function exportCSV(){
+const rows=[["Aseguradora","2024 (millones CRC)","2025 (millones CRC)","Variación (millones CRC)"],...market.resultados_aseguradoras_millones.map(r=>[r.aseguradora,r.r2024,r.r2025,+(r.r2025-r.r2024).toFixed(2)])];
+const csv="\uFEFF"+rows.map(r=>r.map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(";")).join("\r\n");
+const url=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8"}));
+const a=document.createElement("a");a.href=url;a.download="sugese_resultados_contables_2024_2025.csv";a.click();URL.revokeObjectURL(url)
+}
+function validate(m,c){
+if(!Array.isArray(m?.anuales)||m.anuales.length!==2||!Array.isArray(m?.participaciones_mercado_pct)||!Array.isArray(m?.resultados_aseguradoras_millones)||!Array.isArray(c?.interactivos))throw Error("Estructura de datos incompleta");
+for(const y of [2024,2025]){const total=m.participaciones_mercado_pct.reduce((s,x)=>s+Number(x["p"+y]||0),0);if(Math.abs(total-100)>0.05)throw Error("Las participaciones de "+y+" no suman 100 %")}
+for(const r of m.anuales){if(!(r.primas>0&&r.siniestros_pagados>=0))throw Error("Valores económicos inválidos")}
+}
+async function start(){
+try{const responses=await Promise.all(["data/mercado_2025.json","data/catalogo_fuentes.json"].map(p=>fetch(p,{cache:"no-cache"})));if(responses.some(r=>!r.ok))throw Error("No se encuentran los archivos de datos del repositorio");[market,catalog]=await Promise.all(responses.map(r=>r.json()));validate(market,catalog);$("category").insertAdjacentHTML("beforeend",[...new Set(catalog.interactivos.map(x=>x.area))].sort().map(x=>'<option value="'+esc(x)+'">'+esc(x)+'</option>').join(""));$("year").addEventListener("change",draw);$("category").addEventListener("change",sources);$("download").addEventListener("click",exportCSV);draw();sources();$("loading").hidden=true;$("app").hidden=false}catch(e){$("loading").hidden=true;$("error").hidden=false;$("error").textContent="No se pudo mostrar el observatorio: "+e.message}}
+start();
+</script></body></html>
