@@ -1,0 +1,34 @@
+name: Vigilar actualizaciones de SUGESE
+on:
+  schedule:
+    # 13:45 UTC = 07:45 Costa Rica, todos los dias (la ejecucion puede retrasarse).
+    - cron: "45 13 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: vigilar-sugese
+  cancel-in-progress: false
+jobs:
+  consulta:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Consultar fuentes oficiales y generar trazabilidad
+        run: python scripts/vigilar_sugese.py
+      - name: Guardar evidencia de consulta en el repositorio
+        if: always()
+        run: |
+          if [ -f data/estado_fuentes.json ] && ! git diff --quiet -- data/estado_fuentes.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/estado_fuentes.json
+            git commit -m "Monitoreo diario de publicaciones SUGESE [skip ci]"
+            git push
+          fi
