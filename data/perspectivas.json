@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "titulo": "Perspectivas condicionadas del mercado asegurador costarricense",
+    "fecha_analisis": "2026-11-01",
+    "estado": "escenarios cualitativos, no proyecciones estadísticas",
+    "fecha_base_mas_reciente_verificada": "2026-10-12",
+    "periodo_base_cuantitativo": "2025-12",
+    "restriccion": "Todavía no existe una serie oficial mensual 2026 normalizada y conciliada en este repositorio. No estimar probabilidades ni intervalos de confianza ni tasas futuras.",
+    "proxima_revision": "cuando se incorpore un periodo mensual oficial nuevo",
+    "metodologia": "Escenarios condicionales basados en hitos regulatorios y señales de mercado documentadas. No atribuyen causas automáticamente ni generan recomendaciones de inversión."
+  },
+  "hechos": {
+    "primas_2025_yoy_pct": 3.8,
+    "siniestros_pagados_2025_yoy_pct": 10.2,
+    "salud_primas_2025_yoy_pct": 13.6,
+    "ins_participacion_2024_pct": 64.76,
+    "ins_participacion_2025_pct": 62.41,
+    "soa_prima_media_2027_variacion_pct": 4.03,
+    "soa_2027_categoria": "Cambio autorizado para 2027; NO pronóstico",
+    "fuentes": [
+      {
+        "nombre": "Boletín del mercado de seguros, diciembre de 2025",
+        "url": "https://www.sugese.fi.cr/seccion-estadistica/Boletines/boletin_dic_2025.pdf",
+        "tipo": "primaria"
+      },
+      {
+        "nombre": "Primas del SOA autorizadas para 2027, comunicado 12-oct-2026",
+        "url": "https://www.sugese.fi.cr/cr/es/sala-de-prensa/comunicados-prensa/primas-soa-2027.html",
+        "tipo": "primaria"
+      },
+      {
+        "nombre": "Calendario de difusión 2026–2027",
+        "url": "https://www.sugese.fi.cr/seccion-estadistica/Calendario/Calendario_Adelantado_26-27.pdf",
+        "tipo": "primaria"
+      }
+    ]
+  },
+  "horizontes": [
+    {
+      "id": "6",
+      "nombre": "6 meses",
+      "ventana": "noviembre 2026 – abril 2027",
+      "contexto": "Próximo semestre; SOA 2027 ya tiene un ajuste de prima media autorizado. Se debe comprobar cómo incide en la composición del primaje y contrastar la evolución de siniestros con primas comparables.",
+      "escenarios": [
+        {
+          "id": "base",
+          "nombre": "Continuidad",
+          "tipo": "Escenario de referencia",
+          "tesis": "Las primas mantienen variaciones positivas mientras la presión de siniestros sigue siendo un foco de monitoreo. No se presume mejora técnica por mayor primaje.",
+          "confirmacion": "Crecimiento interanual de primas positivo en al menos dos reportes mensuales consecutivos y sin salto del ratio combinado en el siguiente reporte trimestral.",
+          "invalidacion": "Contracción interanual sostenida de primas o deterioro del ratio combinado.",
+          "palancas": [
+            "Primas interanuales comparables",
+            "Siniestros pagados y devengados",
+            "Ratio combinado trimestral"
+          ]
+        },
+        {
+          "id": "favorable",
+          "nombre": "Expansión selectiva",
+          "tipo": "Escenario favorable",
+          "tesis": "Los ramos de personas, particularmente salud, sostienen la expansión y algunas aseguradoras mejoran posición sin deterioro técnico significativo.",
+          "confirmacion": "Crecimiento de primas en salud mayor que el crecimiento total y mejora simultánea del resultado técnico comparable.",
+          "invalidacion": "Pérdida de ritmo en salud o encarecimiento de siniestros por encima del aumento de primas devengadas.",
+          "palancas": [
+            "Primas de salud por ramo y aseguradora",
+            "Participación de mercado",
+            "Resultado técnico"
+          ]
+        },
+        {
+          "id": "adverso",
+          "nombre": "Presión técnica",
+          "tipo": "Escenario adverso",
+          "tesis": "Los siniestros y costos presionan resultados aun cuando el mercado exhiba crecimiento en primas nominales.",
+          "confirmacion": "Ratio combinado en deterioro junto con siniestros incurridos creciendo más rápido que primas devengadas.",
+          "invalidacion": "Ratio combinado estable o en mejora durante cortes comparables.",
+          "palancas": [
+            "Siniestros incurridos",
+            "Primas devengadas",
+            "Ratio combinado"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "nombre": "12 meses",
+      "ventana": "noviembre 2026 – octubre 2027",
+      "contexto": "Perspectiva anual sujeta a la evolución macroeconómica, competencia, reaseguro y desempeño técnico. Requiere contrastar años móviles y efectos estacionales.",
+      "escenarios": [
+        {
+          "id": "base",
+          "nombre": "Competencia gradual",
+          "tipo": "Escenario de referencia",
+          "tesis": "El mercado continúa reconfigurándose gradualmente entre aseguradoras, con diferencias notables por ramo. No se asume que las cuotas sigan la misma tendencia de 2025.",
+          "confirmacion": "Dos o más cortes comparables muestran desplazamientos consistentes de participación por aseguradora y ramo, con primas y pólizas alineadas.",
+          "invalidacion": "Participaciones se estabilizan o los movimientos se explican por cambios de vigencia/contabilidad.",
+          "palancas": [
+            "Participación por ramo",
+            "Pólizas vigentes",
+            "Efectos de vigencia"
+          ]
+        },
+        {
+          "id": "favorable",
+          "nombre": "Crecimiento rentable",
+          "tipo": "Escenario favorable",
+          "tesis": "El crecimiento de primas se acompaña de mejores resultados técnicos, mayor profundidad de mercado y nuevas oportunidades en segmentos voluntarios.",
+          "confirmacion": "Crecimiento real de primas, avance de penetración o densidad y ratio combinado en mejora interanual.",
+          "invalidacion": "Crecimiento explicado principalmente por ajuste de tarifas sin expansión real o deterioro en siniestralidad técnica.",
+          "palancas": [
+            "Crecimiento real de primas",
+            "Penetración y densidad",
+            "Ratio combinado"
+          ]
+        },
+        {
+          "id": "adverso",
+          "nombre": "Desaceleración y costos",
+          "tipo": "Escenario adverso",
+          "tesis": "Una menor expansión del negocio, mayor frecuencia o severidad de siniestros y volatilidad financiera podrían presionar resultados.",
+          "confirmacion": "Crecimiento real de primas débil junto con deterioro técnico y de resultados financieros en varios trimestres.",
+          "invalidacion": "Recuperación sostenida del crecimiento real con estabilización del ratio combinado y solvencia.",
+          "palancas": [
+            "Inflación / tipo de cambio",
+            "Resultado técnico-financiero",
+            "Solvencia trimestral"
+          ]
+        }
+      ]
+    }
+  ],
+  "seguimiento": [
+    {
+      "nombre": "Primas por ramo",
+      "periodicidad": "mensual",
+      "indicador": "Variación interanual (mismo periodo) y doce meses móviles",
+      "fuente": "https://www.sugese.fi.cr/cr/es/estadisticas.html"
+    },
+    {
+      "nombre": "Siniestros por ramo",
+      "periodicidad": "mensual",
+      "indicador": "Pagados: variación comparable; incurridos para evaluación técnica",
+      "fuente": "https://www.sugese.fi.cr/cr/es/estadisticas.html"
+    },
+    {
+      "nombre": "Ratio combinado y resultado técnico",
+      "periodicidad": "trimestral",
+      "indicador": "Variación respecto del trimestre comparable",
+      "fuente": "https://www.sugese.fi.cr/cr/es/estadisticas.html"
+    },
+    {
+      "nombre": "Participación por aseguradora",
+      "periodicidad": "mensual",
+      "indicador": "Diferencia en puntos porcentuales por ramo",
+      "fuente": "https://www.sugese.fi.cr/cr/es/estadisticas.html"
+    },
+    {
+      "nombre": "Solvencia",
+      "periodicidad": "trimestral",
+      "indicador": "Índice de suficiencia de capital",
+      "fuente": "https://www.sugese.fi.cr/cr/es/estadisticas.html"
+    }
+  ]
+}
