@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "titulo": "Señales de mercado 2026 — referencias externas",
+    "fecha_revision": "2026-11-01",
+    "estado": "referencias secundarias, NO conciliadas con exportación oficial SUGESE",
+    "nota": "Nunca mezclar indicadores de 12 meses móviles, acumulados del año ni cifras de un mes individual. Las publicaciones externas pueden usar definiciones distintas."
+  },
+  "datos": [
+    {
+      "indicador": "primas_emitidas",
+      "tipo_serie": "12m_movil",
+      "unidad": "millones de colones",
+      "periodo": "2025-12",
+      "valor": 1226414,
+      "fuente": "https://boletines.latinoinsurance.com/mercado-de-seguros-aumento-12-en-usd-aumento-4-en-colones-septiembre-2026-12-meses",
+      "evidencia": "Cifra base en publicación sectorial del 27/oct/2026",
+      "nivel": "secundario"
+    },
+    {
+      "indicador": "primas_emitidas",
+      "tipo_serie": "12m_movil",
+      "unidad": "millones de colones",
+      "periodo": "2026-08",
+      "valor": 1265045,
+      "fuente": "https://boletines.latinoinsurance.com/mercado-de-seguros-aumento-10-en-usd-aumento-3-en-colones-agosto-2026-12-meses",
+      "evidencia": "Publicado 26/sep/2026, 12 meses terminados en agosto",
+      "nivel": "secundario"
+    },
+    {
+      "indicador": "primas_emitidas",
+      "tipo_serie": "12m_movil",
+      "unidad": "millones de colones",
+      "periodo": "2026-09",
+      "valor": 1277137,
+      "fuente": "https://boletines.latinoinsurance.com/mercado-de-seguros-aumento-12-en-usd-aumento-4-en-colones-septiembre-2026-12-meses",
+      "evidencia": "Publicado 27/oct/2026, 12 meses terminados en septiembre",
+      "nivel": "secundario"
+    }
+  ],
+  "semestral_2026": {
+    "periodo": "2026-06",
+    "primas_crecimiento_interanual_pct": 5.2,
+    "siniestros_pagados_crecimiento_interanual_aprox_pct": 6,
+    "utilidades_variacion_interanual_pct": -87,
+    "fuente": "https://www.elfinancierocr.com/finanzas/tipo-de-cambio-presiono-los-resultados-de-las/433QGCG7SJD3NHBLNICARPHXEU/story/",
+    "publicacion": "2026-09-17",
+    "nivel": "prensa basada en datos SUGESE; conciliar con fuente primaria",
+    "nota": "La disminución en utilidades no es equivalente a deterioro técnico: puede reflejar efecto cambiario o contable."
+  },
+  "validaciones_pendientes": [
+    "Exportación completa de Primas y siniestros oficial SUGESE para 2025 y 2026 en frecuencias comparables.",
+    "Separar acumulado calendario, primas mensuales y doce meses móviles.",
+    "Conciliar totales, unidades, aseguradora, ramo y corte antes de habilitar 'oficial validado' en resumen ejecutivo.",
+    "Revisar si cambio de vigencia pólizas 2024 distorsiona comparación de automóviles."
+  ]
+}
