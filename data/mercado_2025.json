@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "titulo": "Observatorio asegurador de Costa Rica — línea base oficial",
+    "fuente": "https://www.sugese.fi.cr/seccion-estadistica/Boletines/boletin_dic_2025.pdf",
+    "institucion": "SUGESE",
+    "periodo_corte": "2025-12-31",
+    "fecha_revision": "2026-11-01",
+    "unidad_primas_y_siniestros": "miles de millones de colones corrientes",
+    "unidad_resultados": "millones de colones corrientes",
+    "estado": "datos documentados en boletín diciembre 2025; NO representan los últimos datos de 2026",
+    "nivel": "cierre anual agregado",
+    "limitaciones": [
+      "Montos de primas y siniestros redondeados a una décima de mil millones. Usar crecimiento oficial publicado y NO recalcularlo como si los montos fueran exactos.",
+      "El agregado OTROS de las participaciones agrupa aseguradoras; no se debe usar para HHI por entidad.",
+      "La relación siniestros pagados/primas emitidas no es siniestralidad técnica ni ratio combinado.",
+      "SUGESE revisó estadísticas dic-2024 a ago-2025 en oct-2025 por ajuste contable INS.",
+      "No se ha implementado ingestión automática desde Power BI; requiere verificación posterior."
+    ]
+  },
+  "anuales": [
+    {
+      "anio": 2024,
+      "primas": 1180.6,
+      "siniestros_pagados": 564.7,
+      "productos": 817,
+      "aseguradoras": 12,
+      "agentes": 1153,
+      "corredores": 772,
+      "sociedades_corredoras": 38,
+      "sociedades_agencia": 21,
+      "operadores_autoexpedibles": 83,
+      "resultado_contable_millones": 46666.65
+    },
+    {
+      "anio": 2025,
+      "primas": 1226.4,
+      "siniestros_pagados": 622.9,
+      "productos": 798,
+      "aseguradoras": 12,
+      "agentes": 1212,
+      "corredores": 816,
+      "sociedades_corredoras": 39,
+      "sociedades_agencia": 20,
+      "operadores_autoexpedibles": 86,
+      "resultado_contable_millones": 77297.1
+    }
+  ],
+  "crecimientos_oficiales_2025_pct": {
+    "primas": 3.8,
+    "siniestros_pagados": 10.2,
+    "primas_voluntarios": 2.8,
+    "primas_personales_voluntarios": 6,
+    "primas_generales_voluntarios": 0.2,
+    "primas_salud": 13.6,
+    "primas_soа": 12.1,
+    "primas_rt": 5.7
+  },
+  "participaciones_mercado_pct": [
+    {
+      "aseguradora": "INS",
+      "p2024": 64.76,
+      "p2025": 62.41,
+      "grupo": false
+    },
+    {
+      "aseguradora": "Pan American Life",
+      "p2024": 7.91,
+      "p2025": 8.88,
+      "grupo": false
+    },
+    {
+      "aseguradora": "ASSA",
+      "p2024": 7.88,
+      "p2025": 8.05,
+      "grupo": false
+    },
+    {
+      "aseguradora": "MAPFRE",
+      "p2024": 4.07,
+      "p2025": 3.37,
+      "grupo": false
+    },
+    {
+      "aseguradora": "Internacional de Seguros (ISCR)",
+      "p2024": 3.67,
+      "p2025": 3.6,
+      "grupo": false
+    },
+    {
+      "aseguradora": "Quálitas",
+      "p2024": 2.53,
+      "p2025": 2.77,
+      "grupo": false
+    },
+    {
+      "aseguradora": "Sagicor",
+      "p2024": 2.06,
+      "p2025": 2.38,
+      "grupo": false
+    },
+    {
+      "aseguradora": "BMI",
+      "p2024": 2.24,
+      "p2025": 2.04,
+      "grupo": false
+    },
+    {
+      "aseguradora": "Otros (agrupado)",
+      "p2024": 4.88,
+      "p2025": 6.49,
+      "grupo": true
+    }
+  ],
+  "resultados_aseguradoras_millones": [
+    {
+      "aseguradora": "ASSA",
+      "r2024": 76.1,
+      "r2025": 2639.1
+    },
+    {
+      "aseguradora": "BMI",
+      "r2024": -1383.28,
+      "r2025": 479.39
+    },
+    {
+      "aseguradora": "Davivienda",
+      "r2024": 1303.13,
+      "r2025": 927.52
+    },
+    {
+      "aseguradora": "INS",
+      "r2024": 29861.45,
+      "r2025": 53007.82
+    },
+    {
+      "aseguradora": "Internacional de Seguros (ISCR)",
+      "r2024": 1300.11,
+      "r2025": 1557.4
+    },
+    {
+      "aseguradora": "LAFISE",
+      "r2024": 871.73,
+      "r2025": 1544.36
+    },
+    {
+      "aseguradora": "Seguros del Magisterio",
+      "r2024": 1143.33,
+      "r2025": 255.64
+    },
+    {
+      "aseguradora": "MAPFRE",
+      "r2024": 2694.98,
+      "r2025": 1409.18
+    },
+    {
+      "aseguradora": "MNK",
+      "r2024": -1705.29,
+      "r2025": 340.64
+    },
+    {
+      "aseguradora": "Pan American Life",
+      "r2024": 7494.68,
+      "r2025": 11833.86
+    },
+    {
+      "aseguradora": "Quálitas",
+      "r2024": 1974.53,
+      "r2025": 804.61
+    },
+    {
+      "aseguradora": "Sagicor",
+      "r2024": 3035.17,
+      "r2025": 2497.59
+    }
+  ],
+  "notas": [
+    {
+      "titulo": "Primas y siniestros",
+      "texto": "Primas crecieron 3,8%, siniestros pagados 10,2%. Es una señal de presión sobre pagos, no un cálculo de rentabilidad técnica.",
+      "fuente": "https://www.sugese.fi.cr/seccion-estadistica/Boletines/boletin_dic_2025.pdf"
+    },
+    {
+      "titulo": "Ramo salud",
+      "texto": "Las primas de salud aumentaron 13,6% (+₡23,9 miles de millones) en 2025; lideraron el aumento absoluto entre ramos voluntarios.",
+      "fuente": "https://www.sugese.fi.cr/seccion-estadistica/Boletines/boletin_dic_2025.pdf"
+    },
+    {
+      "titulo": "Automóviles",
+      "texto": "La disminución en primas de automóviles (-₡25,5 miles de millones) estuvo influida por cambios de vigencia de pólizas en 2024. No atribuirla sin más a pérdida de clientes.",
+      "fuente": "https://www.sugese.fi.cr/seccion-estadistica/Boletines/boletin_dic_2025.pdf"
+    },
+    {
+      "titulo": "Rentabilidad técnica",
+      "texto": "SUGESE reportó resultado técnico aproximado de -₡10 mil millones en 2024 y +₡25 mil millones en 2025. No es equivalente al resultado contable.",
+      "fuente": "https://www.sugese.fi.cr/seccion-estadistica/Boletines/boletin_dic_2025.pdf"
+    },
+    {
+      "titulo": "Participación del INS",
+      "texto": "Cuota de primas totales pasó de 64,76% en 2024 a 62,41% en 2025 (-2,35 puntos porcentuales).",
+      "fuente": "https://www.sugese.fi.cr/seccion-estadistica/Boletines/boletin_dic_2025.pdf"
+    }
+  ]
+}
