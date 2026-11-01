@@ -13,7 +13,10 @@
 <section class="hero"><div class="sub">SUGESE / INFORMACIÓN PÚBLICA</div><h1>Inteligencia del mercado asegurador</h1><p>Crecimiento, competencia, resultados y señales estratégicas con trazabilidad a la fuente oficial.</p></section>
 <div class="warning"><strong>Alcance:</strong> esta primera versión utiliza el boletín de diciembre de 2025 y comparativos 2024. No refleja el último reporte mensual de 2026, no tiene extracción automática desde SUGESE y no debe interpretarse como información en tiempo real.</div>
 <div id="loading" class="muted" role="status">Cargando datos oficiales de referencia…</div><div id="error" class="error" hidden role="alert"></div>
-<main id="app" hidden>
+<main id="app" hidden><section class="pane" style="margin-top:16px;margin-bottom:16px"><div class="sectiontitle" style="margin-top:0"><h2>Reportes oficiales SUGESE · actualidad 2026</h2><span class="status">Fuente externa en vivo</span></div><p>Estos son reportes interactivos publicados por SUGESE en Power BI. Su actualización depende del regulador. No equivale a haber importado las cifras de 2026 a nuestras tarjetas históricas. Si el sitio impide visualizar el panel integrado, utilizá el enlace directo.</p>
+<div class="controls" style="flex-wrap:wrap;margin:12px 0"><label for="live-report">Consultar reporte:</label><select id="live-report"><option value="primas">Primas y siniestros</option><option value="ratio">Ratio combinado</option><option value="resultado">Resultado técnico-financiero</option><option value="capital">Suficiencia de capital</option></select><a id="live-link" href="https://www.sugese.fi.cr/cr/es/estadisticas.html" target="_blank" rel="noopener noreferrer">Abrir reporte oficial ↗</a></div>
+<iframe id="live-frame" title="Reporte oficial interactivo SUGESE Power BI" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" style="width:100%;height:560px;max-height:75vh;background:#fff;border:1px solid var(--line);border-radius:10px" sandbox="allow-scripts allow-same-origin allow-popups allow-forms" src="about:blank"></iframe>
+<div class="notice">La cifra más reciente visible en Power BI puede ser de septiembre de 2026 u otro periodo publicado. Verificá el corte dentro del reporte. <span id="monitor-info">Monitoreo diario en preparación.</span></div></section>
 <div class="sectiontitle"><h2>Panorama del mercado</h2><div class="controls"><label for="year">Corte:</label><select id="year"><option value="2025">2025</option><option value="2024">2024</option></select></div></div>
 <div class="cards" id="cards"></div>
 <div class="main">
@@ -30,6 +33,10 @@
 </div>
 <script>
 "use strict";
+const officialReports={primas:"https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9",ratio:"https://app.powerbi.com/view?r=eyJrIjoiOGE4OTM2ZDYtZTViOS00ZjIyLTg5MzctNWI5ODRmMGY1ZDBkIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9",resultado:"https://app.powerbi.com/view?r=eyJrIjoiMDk0OGE3NWYtZWYwNy00ZjBjLWIyYTctMDU5OTI4NzY4MjM5IiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9",capital:"https://app.powerbi.com/view?r=eyJrIjoiZTRjOGNmZmMtOGM0OS00MTEyLWFjMDAtNzllYjU0YWEwNjFkIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"};
+function setOfficialReport(){const url=officialReports[$("live-report").value];$("live-link").href=url;$("live-frame").src=url}
+async function loadMonitor(){try{const r=await fetch("data/estado_fuentes.json",{cache:"no-store"});if(!r.ok)return;const d=await r.json();const e=$("monitor-info");e.textContent="Última revisión automática: "+(d.revision_utc||"sin registro")+" (UTC). Estado: "+(d.estado||"desconocido")+". Los indicadores históricos no se actualizan sin validación de cifras."; }catch(e){/* El monitoreo aún no ha ejecutado */}}
+
 const $=id=>document.getElementById(id);
 const money=new Intl.NumberFormat("es-CR",{minimumFractionDigits:1,maximumFractionDigits:1});
 const num=new Intl.NumberFormat("es-CR",{minimumFractionDigits:0,maximumFractionDigits:2});
@@ -67,6 +74,6 @@ for(const y of [2024,2025]){const total=m.participaciones_mercado_pct.reduce((s,
 for(const r of m.anuales){if(!(r.primas>0&&r.siniestros_pagados>=0))throw Error("Valores económicos inválidos")}
 }
 async function start(){
-try{const responses=await Promise.all(["data/mercado_2025.json","data/catalogo_fuentes.json"].map(p=>fetch(p,{cache:"no-cache"})));if(responses.some(r=>!r.ok))throw Error("No se encuentran los archivos de datos del repositorio");[market,catalog]=await Promise.all(responses.map(r=>r.json()));validate(market,catalog);$("category").insertAdjacentHTML("beforeend",[...new Set(catalog.interactivos.map(x=>x.area))].sort().map(x=>'<option value="'+esc(x)+'">'+esc(x)+'</option>').join(""));$("year").addEventListener("change",draw);$("category").addEventListener("change",sources);$("download").addEventListener("click",exportCSV);draw();sources();$("loading").hidden=true;$("app").hidden=false}catch(e){$("loading").hidden=true;$("error").hidden=false;$("error").textContent="No se pudo mostrar el observatorio: "+e.message}}
+try{const responses=await Promise.all(["data/mercado_2025.json","data/catalogo_fuentes.json"].map(p=>fetch(p,{cache:"no-cache"})));if(responses.some(r=>!r.ok))throw Error("No se encuentran los archivos de datos del repositorio");[market,catalog]=await Promise.all(responses.map(r=>r.json()));validate(market,catalog);$("category").insertAdjacentHTML("beforeend",[...new Set(catalog.interactivos.map(x=>x.area))].sort().map(x=>'<option value="'+esc(x)+'">'+esc(x)+'</option>').join(""));$("year").addEventListener("change",draw);$("category").addEventListener("change",sources);$("download").addEventListener("click",exportCSV);draw();sources();$("live-report").addEventListener("change",setOfficialReport);setOfficialReport();loadMonitor();$("loading").hidden=true;$("app").hidden=false}catch(e){$("loading").hidden=true;$("error").hidden=false;$("error").textContent="No se pudo mostrar el observatorio: "+e.message}}
 start();
 </script></body></html>
