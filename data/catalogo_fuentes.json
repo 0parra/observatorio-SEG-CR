@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "revision": "2026-11-01",
+    "fuente_indice": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
+    "estado": "inventario oficial, ingestión automática NO implementada",
+    "nota": "SUGESE indica exportación Excel desde Power BI; no equivale a URL de descarga automatizada"
+  },
+  "interactivos": [
+    {
+      "id": "PB01",
+      "nombre": "Aportes al BC Bomberos e INEC",
+      "area": "contribuciones",
+      "prioridad": "media",
+      "url": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
+      "directo_verificado": false,
+      "ingesta": "pendiente"
+    },
+    {
+      "id": "PB02",
+      "nombre": "Indicadores resumen",
+      "area": "mercado",
+      "prioridad": "alta",
+      "url": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
+      "directo_verificado": false,
+      "ingesta": "pendiente"
+    },
+    {
+      "id": "PB03",
+      "nombre": "Índice de suficiencia de capital",
+      "area": "solvencia",
+      "prioridad": "crítica",
+      "url": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
+      "directo_verificado": false,
+      "ingesta": "pendiente"
+    },
+    {
+      "id": "PB04",
+      "nombre": "Información financiera sociedades agencia",
+      "area": "intermediación",
+      "prioridad": "media",
+      "url": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
+      "directo_verificado": false,
+      "ingesta": "pendiente"
+    },
+    {
+      "id": "PB05",
+      "nombre": "Información financiera sociedades corredoras",
+      "area": "intermediación",
+      "prioridad": "media",
+      "url": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
+      "directo_verificado": false,
+      "ingesta": "pendiente"
+    },
+    {
+      "id": "PB06",
+      "nombre": "Inversiones",
+      "area": "finanzas",
+      "prioridad": "alta",
+      "url": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
+      "directo_verificado": false,
+      "ingesta": "pendiente"
+    },
+    {
+      "id": "PB07",
+      "nombre": "Participantes mercado seguros",
+      "area": "participantes",
+      "prioridad": "alta",
+      "url": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
+      "directo_verificado": false,
+      "ingesta": "pendiente"
+    },
+    {
+      "id": "PB08",
+      "nombre": "Pólizas mercado seguros",
+      "area": "productos",
+      "prioridad": "alta",
+      "url": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
+      "directo_verificado": false,
+      "ingesta": "pendiente"
+    },
+    {
+      "id": "PB09",
+      "nombre": "Primas y siniestros",
+      "area": "primas y siniestros",
+      "prioridad": "crítica",
+      "url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9",
+      "directo_verificado": true,
+      "ingesta": "pendiente"
+    },
+    {
+      "id": "PB10",
+      "nombre": "Ratio combinado",
+      "area": "rentabilidad técnica",
+      "prioridad": "crítica",
+      "url": "https://app.powerbi.com/view?r=eyJrIjoiOGE4OTM2ZDYtZTViOS00ZjIyLTg5MzctNWI5ODRmMGY1ZDBkIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9",
+      "directo_verificado": true,
+      "ingesta": "pendiente"
+    },
+    {
+      "id": "PB11",
+      "nombre": "Resultado técnico-financiero",
+      "area": "resultados técnicos",
+      "prioridad": "crítica",
+      "url": "https://app.powerbi.com/view?r=eyJrIjoiMDk0OGE3NWYtZWYwNy00ZjBjLWIyYTctMDU5OTI4NzY4MjM5IiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9",
+      "directo_verificado": true,
+      "ingesta": "pendiente"
+    },
+    {
+      "id": "PB12",
+      "nombre": "Resumen partidas y estados financieros",
+      "area": "estados financieros",
+      "prioridad": "alta",
+      "url": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
+      "directo_verificado": false,
+      "ingesta": "pendiente"
+    },
+    {
+      "id": "PB13",
+      "nombre": "Riesgos del trabajo",
+      "area": "obligatorios",
+      "prioridad": "alta",
+      "url": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
+      "directo_verificado": false,
+      "ingesta": "pendiente"
+    },
+    {
+      "id": "PB14",
+      "nombre": "Siniestralidad SOA",
+      "area": "obligatorios",
+      "prioridad": "alta",
+      "url": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
+      "directo_verificado": false,
+      "ingesta": "pendiente"
+    }
+  ],
+  "historicos": {
+    "periodo": "2010-2014",
+    "cantidad_anexos": 9,
+    "url": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
+    "estado": "formatos históricos no homologados"
+  },
+  "documentos": [
+    {
+      "nombre": "Boletín cierre diciembre 2025",
+      "url": "https://www.sugese.fi.cr/seccion-estadistica/Boletines/boletin_dic_2025.pdf",
+      "tipo": "PDF",
+      "estado": "cifras verificadas"
+    },
+    {
+      "nombre": "Calendario de publicación 2026-2027",
+      "url": "https://www.sugese.fi.cr/seccion-estadistica/Calendario/Calendario_Adelantado_26-27.pdf",
+      "tipo": "PDF",
+      "estado": "consultado"
+    },
+    {
+      "nombre": "Guía reportes estadísticos",
+      "url": "https://www.sugese.fi.cr/seccion-estadistica/Ayudas/Guia_Reportes_Estadisticos.pdf",
+      "tipo": "PDF",
+      "estado": "localizado"
+    },
+    {
+      "nombre": "Pólizas registradas",
+      "url": "https://www.sugese.fi.cr/cr/es/polizas-registradas.html",
+      "tipo": "WEB",
+      "estado": "localizado"
+    }
+  ]
+}
