@@ -1,10 +1,14 @@
 name: Diagnóstico de extracción SUGESE
 on:
+  push:
+    paths:
+      - 'scripts/diagnosticar_extraccion.py'
+      - '.github/workflows/diagnosticar-extraccion.yml'
   workflow_dispatch:
   schedule:
     - cron: "15 14 * * 1"
 permissions:
-  contents: read
+  contents: write
 jobs:
   investigar:
     runs-on: ubuntu-latest
@@ -29,3 +33,14 @@ jobs:
             data/diagnostico_extraccion.json
             tmp/sugese_probe/
           retention-days: 7
+      - name: Registrar diagnóstico en el repositorio
+        if: always()
+        run: |
+          if [ -f data/diagnostico_extraccion.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/diagnostico_extraccion.json
+            git commit -m "Diagnóstico de acceso público SUGESE [skip ci]" || true
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
