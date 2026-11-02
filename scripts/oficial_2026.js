@@ -42,12 +42,12 @@ window.renderOfficial2026=function(payload,api){
     }).join("");
     $("share-explain").innerHTML='<strong>Interpretación calculada:</strong> '+esc(insurer[0].aseguradora)+' lidera en primas del corte '+esc(last)+', con '+fmt(100*insurer[0].valor/p.valor,2)+'% del mercado. Esta cuota depende de que los importes del reporte correspondan a entidades y periodos comparables. '+(meta.estado==="conciliado_con_totales"?"Suma reconciliada contra el total suministrado.":"Suma por entidades aún sin conciliación contra total de mercado.");
   }else if(p&&p.valor>0){
-    const branch=data.filter(x=>isMarket(x)&&!isAll(x)&&same(x,"primas_emitidas",kind,last)).sort((a,b)=>b.valor-a.valor);
+    const branch=data.filter(x=>isMarket(x)&&!isAll(x)&&x.indicador==="primas_emitidas"&&x.tipo_serie===kind&&x.periodo===last&&x.unidad==="millones CRC").sort((a,b)=>b.valor-a.valor);
     if(branch.length){
       $("share-title").textContent="Composición de primas 2026 por ramo";
       $("share").innerHTML=branch.map(x=>{const pct=100*x.valor/p.valor;return '<div class="barrow"><span class="barlabel" title="'+esc(x.ramo)+'">'+esc(x.ramo)+'</span><div class="bartrack"><div class="barfill" style="width:'+Math.min(100,Math.max(0,pct/35*100))+'%"></div></div><span class="num">'+fmt(pct,2)+'%</span></div>'}).join("");
       const py=String(Number(last.slice(0,4))-1)+last.slice(4);
-      const changes=branch.map(x=>{const prev=data.find(y=>isMarket(y)&&y.ramo===x.ramo&&same(y,"primas_emitidas",kind,py));return prev?{ramo:x.ramo,diferencia:x.valor-prev.valor,variacion:prev.valor?100*(x.valor-prev.valor)/Math.abs(prev.valor):null}:null}).filter(Boolean).sort((a,b)=>b.diferencia-a.diferencia);
+      const changes=branch.map(x=>{const prev=data.find(y=>isMarket(y)&&y.ramo===x.ramo&&y.indicador==="primas_emitidas"&&y.tipo_serie===kind&&y.periodo===py);return prev?{ramo:x.ramo,diferencia:x.valor-prev.valor,variacion:prev.valor?100*(x.valor-prev.valor)/Math.abs(prev.valor):null}:null}).filter(Boolean).sort((a,b)=>b.diferencia-a.diferencia);
       $("share-explain").innerHTML='<strong>Interpretación por ramo:</strong> '+esc(branch[0].ramo)+' representa '+fmt(100*branch[0].valor/p.valor,2)+'% del primaje acumulado del corte '+esc(last)+'. '+(changes.length?'El mayor aumento absoluto respecto a '+esc(py)+' se observa en '+esc(changes[0].ramo)+' (₡'+fmt(changes[0].diferencia/1000,2)+' mil millones).':'Aún no hay comparación por ramo con igual periodo del año anterior.')+' Son datos oficiales del cuadro público de SUGESE.';
     }else{
       $("share").innerHTML='<div class="notice">La exportación requiere datos desagregados por aseguradora o ramo para calcular participaciones.</div>';
