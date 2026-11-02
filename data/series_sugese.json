@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "estado": "pendiente_exportacion_oficial",
+    "procesado_utc": null,
+    "periodo_maximo": null,
+    "origen": "Se requiere exportación SUGESE 2026 y validación mediante scripts/ingestar_sugese.py",
+    "nivel": "Este archivo no contiene observaciones. Las referencias sectoriales 2026 están en data/senales_2026.json y no deben combinarse como datos primarios."
+  },
+  "series": []
+}
