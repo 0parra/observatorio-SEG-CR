@@ -1,12 +1,12 @@
 {
-  "revisado_utc": "2026-11-02T18:19:29+00:00",
+  "revisado_utc": "2026-11-02T22:47:23+00:00",
   "tipo": "diagnostico_sin_extraccion_validada",
   "pagina_estadisticas": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
   "reporte_powerbi": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9",
   "sitio": {
     "http": 200,
     "bytes": 87512,
-    "sha256": "076966fe624c4b95437840a7221cc7e30e23cf7881818eb4d0715ddc61a2e090",
+    "sha256": "874eb01c028869ee2af6e489e46485774df79a823ae43900d12c99777aafe662",
     "enlaces_relevantes": [
       {
         "texto": "Boletines",
