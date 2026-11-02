@@ -82,8 +82,7 @@ def main():
      clicked=True
      break
    if not clicked:raise ValueError("No apareció un botón visible de navegación tras cargar Power BI")
-   page.get_by_text("Composición por ramo",exact=False).first.wait_for(timeout=30000)
-   page.wait_for_timeout(5000)
+   page.wait_for_timeout(14000)  # la tabla Power BI puede tardar en renderizar y el tooltip oculto no es señal de carga
    text=page.locator("body").inner_text(timeout=15000)
   finally:browser.close()
  parsed=parse_table(text)
