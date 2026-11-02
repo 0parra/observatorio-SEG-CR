@@ -28,8 +28,8 @@ ALIASES={
 "indicador":["indicador","variable","concepto","tipo indicador"],
 "valor":["valor","monto","importe","valor en millones"],
 "unidad":["unidad","unidad de medida"],
-"tipo_serie":["tipo_serie","tipo de serie","frecuencia acumulacion","acumulacion"],
-"fuente_url":["fuente_url","url fuente","fuente oficial","fuente"],
+"tipo_serie":["tipo serie","tipo de serie","frecuencia acumulacion","acumulacion"],
+"fuente_url":["fuente url","url fuente","fuente oficial","fuente"],
 }
 REQUIRED=("periodo","indicador","valor","unidad","tipo_serie","fuente_url")
 
