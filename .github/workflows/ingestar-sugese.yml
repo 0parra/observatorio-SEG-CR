@@ -1,0 +1,49 @@
+name: Publicar datos oficiales SUGESE 2026
+on:
+  push:
+    paths:
+      - "incoming/**"
+      - "scripts/ingestar_sugese.py"
+      - ".github/workflows/ingestar-sugese.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ingesta-sugese
+  cancel-in-progress: false
+jobs:
+  procesar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar parser Excel
+        run: python -m pip install --disable-pip-version-check openpyxl==3.1.5
+      - name: Detectar archivos de entrada
+        id: archivos
+        run: |
+          if find incoming -maxdepth 1 -type f \( -iname '*.csv' -o -iname '*.xlsx' \) | grep -q .; then
+            echo "hay=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "hay=false" >> "$GITHUB_OUTPUT"
+            echo "No se detectaron archivos oficiales en incoming/; no se publica ninguna cifra."
+          fi
+      - name: Validar, normalizar y conciliar
+        if: steps.archivos.outputs.hay == 'true'
+        run: python scripts/ingestar_sugese.py
+      - name: Guardar JSON validado
+        if: steps.archivos.outputs.hay == 'true'
+        run: |
+          if ! git diff --quiet -- data/series_sugese.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/series_sugese.json
+            git commit -m "Actualiza series oficiales importadas SUGESE 2026 [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
