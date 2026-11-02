@@ -1,12 +1,29 @@
 "use strict";
 (()=>{const el=x=>document.getElementById(x),n=(x,d=1)=>Number(x).toLocaleString("es-CR",{minimumFractionDigits:d,maximumFractionDigits:d}),safe=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-let mode="2026",signals=null,market=null,rows=[];
+let mode="2026",signals=null,market=null,official=null,rows=[];
 const signal=(heading,number,description,link)=>'<article class="signal"><small>'+safe(heading)+'</small><strong>'+safe(number)+'</strong><p>'+safe(description)+'</p>'+(link?'<a href="'+safe(link)+'" target="_blank" rel="noopener noreferrer">Consultar fuente ↗</a>':"")+'</article>';
 function render(){
 const root=el("radar-content");if(!root)return;document.querySelectorAll("[data-radarmode]").forEach(x=>x.setAttribute("aria-pressed",x.dataset.radarmode===mode));
 if(mode==="2026"){
+const oficiales=official?.series||[];
+const isMarket=r=>["mercado","total","total mercado"].includes(String(r.aseguradora||"").toLowerCase());
+const isAll=r=>["todos","total","mercado","general"].includes(String(r.ramo||"").toLowerCase());
+const prim=oficiales.filter(x=>isMarket(x)&&isAll(x)&&x.indicador==="primas_emitidas"&&x.unidad==="millones CRC");
+if(prim.length && ["conciliado_con_totales","validado_estructuralmente_sin_conciliacion_externa"].includes(official.meta?.estado)){
+ const kind=["acumulado_anual","12m_movil","mensual","trimestral"].find(k=>prim.some(r=>r.tipo_serie===k));
+ const series=prim.filter(r=>r.tipo_serie===kind).sort((a,b)=>a.periodo.localeCompare(b.periodo));
+ const last=series.at(-1),prior=series.length>1?series.at(-2):null;
+ const claims=oficiales.find(r=>isMarket(r)&&isAll(r)&&r.indicador==="siniestros_pagados"&&r.periodo===last.periodo&&r.tipo_serie===kind);
+ const pct=prior?.valor?100*(last.valor-prior.valor)/Math.abs(prior.valor):null;
+ const tipo={acumulado_anual:"acumulado anual","12m_movil":"12 meses móviles",mensual:"mensual",trimestral:"trimestral"}[kind];
+ root.innerHTML='<p class="radarhint"><b>Fuente de lectura:</b> exportación oficial SUGESE incorporada a GitHub · corte '+safe(last.periodo)+' · '+safe(tipo)+'. Estado: '+safe(official.meta.estado)+'.</p><div class="radargrid">'+
+ signal("Primas · "+tipo,"₡"+n(last.valor,0)+" millones","Corte "+last.periodo+" · fuente oficial importada.",last.fuente_url)+
+ signal("Variación del mismo tipo de serie",pct===null?"No comparable":(pct>=0?"+":"")+n(pct,2)+"%",pct===null?"Se requiere el periodo anterior de igual tipo y unidad.":"Comparación entre "+prior.periodo+" y "+last.periodo+"; no es necesariamente crecimiento interanual.",last.fuente_url)+
+ signal("Siniestros · "+tipo,claims?"₡"+n(claims.valor,0)+" millones":"Sin dato","Solo se interpreta cuando hay observaciones con igual corte y acumulación.",claims?.fuente_url||last.fuente_url)+'</div><p class="radarhint">Para calcular participación por aseguradora, evolución por ramo, siniestralidad técnica y tendencias interanuales completas hay que incorporar esas series oficiales de forma homogénea.</p>';
+}else{
 const a=signals?.datos?.find(x=>x.periodo==="2026-08"&&x.tipo_serie==="12m_movil"),b=signals?.datos?.find(x=>x.periodo==="2026-09"&&x.tipo_serie==="12m_movil"),h=signals?.semestral_2026;
 root.innerHTML=!a||!b?'<p>No hay referencias 2026 disponibles para comparar.</p>':'<p class="radarwarn"><b>Lectura preliminar:</b> cifras de fuentes secundarias, pendientes de conciliación con la exportación oficial SUGESE. Un dato de 12 meses móviles NO equivale al dato del mes.</p><div class="radargrid">'+signal("Primas · 12 meses hasta septiembre 2026","₡"+n(b.valor,0)+" millones","Ventana móvil de doce meses terminada en septiembre; no es prima únicamente de septiembre.",b.fuente)+signal("Variación de ventanas móviles","+"+n(b.valor-a.valor,0)+" millones","Agosto → septiembre 2026: "+n((b.valor-a.valor)/a.valor*100,2)+"%. No es variación interanual.",b.fuente)+signal("Primer semestre 2026","+5,2% primas","Crecimiento interanual reportado por prensa. Los siniestros pagados aumentaron alrededor de 6%.",h?.fuente)+'</div><p class="radarhint">Prioridad analítica: contrastar crecimiento de primas con evolución de siniestros, rentabilidad y participación por ramo, una vez importados los datos oficiales comparables.</p>';
+}
 }else if(mode==="2025"){
 const p=market?.participaciones_mercado_pct||[],ins=p.find(x=>x.aseguradora==="INS"),pal=p.find(x=>x.aseguradora==="Pan American Life"),src=market?.meta?.fuente;
 root.innerHTML='<div class="radargrid">'+signal("Alerta: pagos crecen más rápido","+6,4 pp","+10,2% en siniestros pagados frente a +3,8% en primas emitidas (tasas 2025). No equivale a ratio combinado.",src)+signal("Competencia · INS",ins?n(ins.p2025-ins.p2024,2)+" pp":"Sin datos","Variación de cuota total de primas entre 2024 y 2025.",src)+signal("Competencia · Pan American Life",pal?"+"+n(pal.p2025-pal.p2024,2)+" pp":"Sin datos","Cambio en participación total de primas; requiere análisis por ramo.",src)+'</div><p class="radarhint">Ramo salud +13,6% en primas 2025. En automóviles existe efecto por cambios en vigencias; no atribuir toda la variación a pérdida de negocio.</p>';
@@ -22,6 +39,6 @@ const key=r=>[r.periodo,r.aseguradora,r.ramo,r.indicador,r.unidad,r.tipo_serie].
 const pairs=rows.flatMap(r=>{let x=by.get([prior(r.periodo),r.aseguradora,r.ramo,r.indicador,r.unidad,r.tipo_serie].join("|"));return x?[{...r,prev:x.valor,pct:x.valor===0?null:(r.valor-x.valor)/Math.abs(x.valor)*100}]:[]}).sort((a,b)=>b.periodo.localeCompare(a.periodo));
 return '<p class="radarhint">'+rows.length+' registros; '+pairs.length+' comparaciones válidas. Las series acumuladas o móviles no representan el valor de un mes aislado.</p><div class="tablewrap"><table><thead><tr><th>Periodo</th><th>Serie</th><th>Entidad / ramo</th><th>Actual</th><th>Variación</th></tr></thead><tbody>'+pairs.slice(0,50).map(r=>'<tr><td>'+safe(r.periodo)+'</td><td>'+safe(r.indicador+" ("+r.tipo_serie+")")+'</td><td>'+safe(r.aseguradora+" / "+r.ramo)+'</td><td>'+n(r.valor,2)+'</td><td>'+safe(r.pct===null?"Base cero":n(r.pct,2)+"%")+'</td></tr>').join("")+'</tbody></table></div>';
 }
-async function run(){try{let responses=await Promise.all(["data/mercado_2025.json","data/senales_2026.json"].map(s=>fetch(s,{cache:"no-cache"})));market=await responses[0].json();signals=await responses[1].json()}catch(e){console.warn("Fuentes del radar incompletas",e)}document.querySelectorAll("[data-radarmode]").forEach(x=>x.addEventListener("click",()=>{mode=x.dataset.radarmode;render()}));render()}
+async function run(){try{let responses=await Promise.all(["data/mercado_2025.json","data/senales_2026.json","data/series_sugese.json"].map(s=>fetch(s,{cache:"no-cache"})));market=await responses[0].json();signals=await responses[1].json();if(responses[2].ok)official=await responses[2].json()}catch(e){console.warn("Fuentes del radar incompletas",e)}document.querySelectorAll("[data-radarmode]").forEach(x=>x.addEventListener("click",()=>{mode=x.dataset.radarmode;render()}));render()}
 run();
 })();
