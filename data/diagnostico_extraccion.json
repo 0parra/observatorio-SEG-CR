@@ -1,5 +1,5 @@
 {
-  "revisado_utc": "2026-11-02T18:17:04+00:00",
+  "revisado_utc": "2026-11-02T18:19:29+00:00",
   "tipo": "diagnostico_sin_extraccion_validada",
   "pagina_estadisticas": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
   "reporte_powerbi": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9",
@@ -147,7 +147,12 @@
         "texto": "Show keyboard shortcuts\nShow screen reader tips\nSkip to main content\nPower BI Report\n\nPRIMAS Y SINIESTROS\n\nCuadros\n\nGráficos\n\nPor ramo y aseguradora\nPor ramo y aseguradora porcentual\nPor ramo\nGráfico por aseguradora\nGráfico por ramo\nPor aseguradora\nPor tipo\nPor categoría\nGráfico por tipo\nGráfico por categoría\nPenetración y profundidad\n\nGuía y diccionario\n\nGuía\nDiccionario\n-\n+\n113%\nMicrosoft Power BI\n1of12\nReport Zoomed To 113%",
         "botones_exportar": 0
       }
-    ]
+    ],
+    "boton_entrada_cuadros": 2,
+    "detalle_cuadro": {
+      "texto": "Show keyboard shortcuts\nShow screen reader tips\nSkip to main content\nPower BI Report\nInicio\n\nCuadro 1. Primas y siniestros acumulados por ramo y aseguradora (millones de colones)\n\nCategoría\nAll\nClasificación\nPrimas\nRamo\nAll\nAseguradora\nAll\nMes\nseptiembre\nAño\nMultiple selections\nComposición por ramo\nScroll up\nScroll down\nScroll left\nScroll right\nRamo\nsep-22\n \nsep-23\n \nsep-24\n \nsep-25\n \nsep-26\n \nAutomóvil\n144,229.31\n149,582.71\n212,825.97\n180,525.61\n199,070.75\nVehículos marítimos\n791.29\n808.34\n1,164.83\n998.80\n772.82\nAviación\n801.65\n887.15\n911.76\n680.71\n593.26\nMercancías transportadas\n8,514.91\n8,778.32\n10,150.46\n8,972.58\n8,318.40\nIncendio y líneas aliadas\n90,049.39\n83,224.04\n85,872.33\n92,827.76\n91,360.25\nOtros daños a los bienes\n33,369.23\n33,582.60\n40,534.67\n46,120.06\n48,816.40\nResponsabilidad civil\n17,661.79\n18,171.25\n17,400.14\n19,185.51\n21,082.63\nCrédito\n161.35\n464.95\n480.96\n626.37\n557.63\nCaución\n2,672.20\n2,515.85\n2,970.23\n3,600.45\n4,271.81\nPérdidas pecuniarias\n29,770.71\n33,880.15\n30,415.69\n33,246.82\n32,517.81\nAgrícolas y pecuarios\n258.66\n178.66\n120.18\n64.18\n131.28\nSeguro obligatorio de automóviles (SOA)\n61,660.90\n64,890.25\n71,291.69\n79,154.25\n93,983.34\nSeguros de asistencias de ramos generales\n \n0.00\n \n84.29\n85.40\nVida\n156,089.61\n159,329.74\n151,385.76\n153,411.33\n155,263.62\nSeguro obligatorio de riesgos del trabajo (SRT)\n131,665.27\n147,304.50\n160,525.11\n171,187.93\n178,155.35\nAccidentes\n21,306.06\n20,057.52\n18,508.39\n19,765.01\n20,581.52\nSalud\n118,521.29\n123,871.44\n140,248.18\n162,857.47\n168,219.64\nSeguros de asistencias de ramos personales\n \n2.12\n3.69\n51.85\n302.43\nTotal\n817,523.68\n847,529.68\n944,810.11\n973,361.06\n1,024,084.44\n\nNota: -Compañía Internacional de Seguros Filial IS-CR Sociedad Anónima (Aseguradora del Istmo (ADISA) S.A. hasta agosto 2025).\n\n            -MNK Seguros Compañía Aseguradora S.A. (Oceánica de Seguros hasta noviembre 2024).\n\nFuente: Superintendencia General de Seguros con base en la información suministrada por las aseguradoras.\n\nExportar\n-\n+\n113%\nMicrosoft Power BI\n2of12\nReport Zoomed To 113%",
+      "controles_exportar": 2
+    }
   },
   "archivos": [
     {
