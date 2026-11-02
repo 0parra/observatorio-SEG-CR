@@ -56,7 +56,7 @@ if(is2026){
   $("cards").innerHTML=[
     card("Primas · 12 meses a sep 2026","₡"+fmt(sept.valor/1000)+" mil millones","Fuente secundaria · cifra móvil; no es prima de septiembre"),
     card("Variación ventana móvil","+"+fmt(delta/1000)+" mil millones","Agosto → septiembre 2026 · +"+fmt(growth,2)+"% entre ventanas"),
-    card("Primas · primer semestre","+fmt(sem.primas_crecimiento_interanual_pct,1)+"%","Interanual a junio 2026 · referencia periodística"),
+    card("Primas · primer semestre","+"+fmt(sem.primas_crecimiento_interanual_pct,1)+"%","Interanual a junio 2026 · referencia periodística"),
     card("Siniestros · primer semestre","≈+"+fmt(sem.siniestros_pagados_crecimiento_interanual_aprox_pct,1)+"%","Interanual a junio 2026 · referencia periodística")
   ].join("");
   $("share").innerHTML='<div class="notice">Participación 2026 por aseguradora: no disponible en un conjunto oficial estructurado y validado. <a href="https://www.sugese.fi.cr/cr/es/estadisticas.html" target="_blank" rel="noopener noreferrer">Consultar el reporte de SUGESE</a>. No mostramos participaciones de 2025 como si fueran de 2026.</div>';
