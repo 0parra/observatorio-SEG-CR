@@ -62,6 +62,19 @@ try:
   try:
    page.screenshot(path=str(ART/"powerbi.png"),full_page=False,timeout=10000)
   except Exception as ex:status["errores"].append("Captura: "+repr(ex))
+  # La portada del informe no contiene Exportar; navegar primero a un cuadro
+  # público del propio reporte, sin usar APIs internas ni credenciales.
+  try:
+   nav=page.get_by_text("Por ramo y aseguradora",exact=True)
+   status["powerbi"]["boton_entrada_cuadros"]=nav.count()
+   if nav.count():
+    nav.first.click(timeout=15000)
+    page.wait_for_timeout(14000)
+    detail=page.locator("body").inner_text(timeout=10000)
+    status["powerbi"]["detalle_cuadro"]={"texto":detail[:4000],"controles_exportar":page.get_by_text(re.compile("Exportar",re.I)).count()}
+    page.screenshot(path=str(ART/"cuadro_por_ramo_aseguradora.png"),full_page=False,timeout=10000)
+    print("Cuadro abierto: Exportar",status["powerbi"]["detalle_cuadro"]["controles_exportar"])
+  except Exception as ex:status["errores"].append("Navegación dentro Power BI: "+repr(ex)[:200])
   for frame in frames:
    if captures:break
    try:
