@@ -31,6 +31,7 @@
 </main>
 <footer class="footer">Proyecto independiente con información pública. No afiliado ni respaldado por SUGESE. Fuente: <a href="https://www.sugese.fi.cr/cr/es/estadisticas.html" target="_blank" rel="noopener noreferrer">estadísticas SUGESE</a> · <a href="https://www.sugese.fi.cr/seccion-estadistica/Boletines/boletin_dic_2025.pdf" target="_blank" rel="noopener noreferrer">boletín diciembre 2025</a>. Sin datos simulados.</footer>
 </div>
+<script src="scripts/oficial_2026.js"></script>
 <script>
 "use strict";
 const officialReports={primas:"https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9",ratio:"https://app.powerbi.com/view?r=eyJrIjoiOGE4OTM2ZDYtZTViOS00ZjIyLTg5MzctNWI5ODRmMGY1ZDBkIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9",resultado:"https://app.powerbi.com/view?r=eyJrIjoiMDk0OGE3NWYtZWYwNy00ZjBjLWIyYTctMDU5OTI4NzY4MjM5IiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9",capital:"https://app.powerbi.com/view?r=eyJrIjoiZTRjOGNmZmMtOGM0OS00MTEyLWFjMDAtNzllYjU0YWEwNjFkIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"};
@@ -43,9 +44,13 @@ const num=new Intl.NumberFormat("es-CR",{minimumFractionDigits:0,maximumFraction
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const fmt=(n,d=1)=>Number(n).toLocaleString("es-CR",{minimumFractionDigits:d,maximumFractionDigits:d});
 const card=(label,value,foot,cls="")=>'<article class="card"><div class="label">'+esc(label)+'</div><div class="value '+cls+'">'+esc(value)+'</div><div class="foot">'+esc(foot)+'</div></article>';
-let market,catalog,signals2026;
+let market,catalog,signals2026;window.official2026=null;
 function draw(){
 const year=Number($("year").value),is2026=year===2026,row=market.anuales.find(x=>x.anio===year),srcOfficial=market.meta.fuente;
+if(is2026 && window.official2026?.series?.length && typeof window.renderOfficial2026==="function"){
+ const shown=window.renderOfficial2026(window.official2026,{$,fmt,esc,card});
+ if(shown)return;
+}
 if(is2026){
   const items=signals2026.datos.filter(x=>x.indicador==="primas_emitidas"&&x.tipo_serie==="12m_movil");
   const sept=items.find(x=>x.periodo==="2026-09"),aug=items.find(x=>x.periodo==="2026-08"),dec=items.find(x=>x.periodo==="2025-12");
@@ -108,6 +113,6 @@ for(const y of [2024,2025]){const total=m.participaciones_mercado_pct.reduce((s,
 for(const r of m.anuales){if(!(r.primas>0&&r.siniestros_pagados>=0))throw Error("Valores económicos inválidos")}
 }
 async function start(){
-try{const responses=await Promise.all(["data/mercado_2025.json","data/catalogo_fuentes.json","data/senales_2026.json"].map(p=>fetch(p,{cache:"no-cache"})));if(responses.some(r=>!r.ok))throw Error("No se encuentran los archivos de datos del repositorio");[market,catalog,signals2026]=await Promise.all(responses.map(r=>r.json()));validate(market,catalog);if(!Array.isArray(signals2026?.datos)||!signals2026?.semestral_2026)throw Error("Referencias 2026 incompletas");$("category").insertAdjacentHTML("beforeend",[...new Set(catalog.interactivos.map(x=>x.area))].sort().map(x=>'<option value="'+esc(x)+'">'+esc(x)+'</option>').join(""));$("year").addEventListener("change",draw);$("category").addEventListener("change",sources);$("download").addEventListener("click",exportCSV);draw();sources();$("live-report").addEventListener("change",setOfficialReport);setOfficialReport();loadMonitor();$("loading").hidden=true;$("app").hidden=false}catch(e){$("loading").hidden=true;$("error").hidden=false;$("error").textContent="No se pudo mostrar el observatorio: "+e.message}}
+try{const responses=await Promise.all(["data/mercado_2025.json","data/catalogo_fuentes.json","data/senales_2026.json"].map(p=>fetch(p,{cache:"no-cache"})));if(responses.some(r=>!r.ok))throw Error("No se encuentran los archivos de datos del repositorio");[market,catalog,signals2026]=await Promise.all(responses.map(r=>r.json()));validate(market,catalog);try{const raw=await fetch("data/series_sugese.json",{cache:"no-cache"});if(raw.ok)window.official2026=await raw.json()}catch(e){console.warn("No se pudo consultar las series oficiales importadas; se mantienen referencias identificadas.",e)}if(!Array.isArray(signals2026?.datos)||!signals2026?.semestral_2026)throw Error("Referencias 2026 incompletas");$("category").insertAdjacentHTML("beforeend",[...new Set(catalog.interactivos.map(x=>x.area))].sort().map(x=>'<option value="'+esc(x)+'">'+esc(x)+'</option>').join(""));$("year").addEventListener("change",draw);$("category").addEventListener("change",sources);$("download").addEventListener("click",exportCSV);draw();sources();$("live-report").addEventListener("change",setOfficialReport);setOfficialReport();loadMonitor();$("loading").hidden=true;$("app").hidden=false}catch(e){$("loading").hidden=true;$("error").hidden=false;$("error").textContent="No se pudo mostrar el observatorio: "+e.message}}
 start();
 </script><script src="scripts/radar.js" defer></script><script src="scripts/perspectivas.js" defer></script></body></html>
