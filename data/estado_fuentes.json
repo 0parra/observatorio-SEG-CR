@@ -1,11 +1,40 @@
 {
-  "revision_utc": null,
-  "estado": "pendiente_primera_ejecucion",
+  "revision_utc": "2026-11-02T22:28:31+00:00",
   "fuente": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
+  "estado": "accesible",
+  "sha256_indice": "874eb01c028869ee2af6e489e46485774df79a823ae43900d12c99777aafe662",
+  "fuentes_consultadas": [
+    {
+      "nombre": "Índice de estadísticas",
+      "url": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
+      "resultado": "accesible",
+      "sha256": "874eb01c028869ee2af6e489e46485774df79a823ae43900d12c99777aafe662"
+    },
+    {
+      "nombre": "Mapa público del sitio",
+      "url": "https://www.sugese.fi.cr/sitemap.xml",
+      "resultado": "accesible",
+      "sha256": "c65fe0e9be51b865c436bd6f306d64de89c059fd0c728660c86a80af0ca86847"
+    },
+    {
+      "nombre": "Boletín diciembre 2025",
+      "url": "https://www.sugese.fi.cr/seccion-estadistica/Boletines/boletin_dic_2025.pdf",
+      "resultado": "error",
+      "detalle": "Boletín diciembre 2025: HTTPError: HTTP Error 404: Not Found"
+    }
+  ],
+  "reportes_publicos_powerbi": {
+    "Primas y siniestros": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9",
+    "Ratio combinado": "https://app.powerbi.com/view?r=eyJrIjoiOGE4OTM2ZDYtZTViOS00ZjIyLTg5MzctNWI5ODRmMGY1ZDBkIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9",
+    "Resultado técnico-financiero": "https://app.powerbi.com/view?r=eyJrIjoiMDk0OGE3NWYtZWYwNy00ZjBjLWIyYTctMDU5OTI4NzY4MjM5IiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9",
+    "Suficiencia de capital": "https://app.powerbi.com/view?r=eyJrIjoiZTRjOGNmZmMtOGM0OS00MTEyLWFjMDAtNzllYjU0YWEwNjFkIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+  },
   "boletines_detectados": [],
   "nuevos_boletines": [],
   "boletines_2026_encontrados": [],
-  "errores": [],
-  "actualizacion_indicadores_2026": "pendiente: exportacion validada o descarga oficial estructurada",
-  "advertencia": "Monitoreo diario de publicaciones. NO se extraen automáticamente cifras de las vistas Power BI ni se actualizan las tarjetas hasta validarlas."
+  "errores": [
+    "Boletín diciembre 2025: HTTPError: HTTP Error 404: Not Found"
+  ],
+  "actualizacion_indicadores_2026": "pendiente: exportacion validada SUGESE o descarga oficial estructurada",
+  "advertencia": "Revisión diaria de disponibilidad. SUGESE publica datos mensuales/trimestrales. Esta tarea NO transforma un cambio HTML ni un PDF nuevo en cifras verificadas."
 }
