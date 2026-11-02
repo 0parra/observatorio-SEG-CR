@@ -72,7 +72,16 @@ def main():
   try:
    response=page.goto(URL,wait_until="domcontentloaded",timeout=60000)
    if not response or response.status!=200:raise ValueError("El reporte público no respondió con HTTP 200")
-   page.get_by_text("Por ramo y aseguradora",exact=True).first.click(timeout=30000)
+   page.wait_for_timeout(18000)  # Power BI necesita inicializar el lienzo antes de hacer clic
+   buttons=page.get_by_text("Por ramo y aseguradora",exact=True)
+   clicked=False
+   for i in range(buttons.count()):
+    option=buttons.nth(i)
+    if option.is_visible():
+     option.click(timeout=15000)
+     clicked=True
+     break
+   if not clicked:raise ValueError("No apareció un botón visible de navegación tras cargar Power BI")
    page.get_by_text("Composición por ramo",exact=False).first.wait_for(timeout=30000)
    page.wait_for_timeout(5000)
    text=page.locator("body").inner_text(timeout=15000)
