@@ -1,0 +1,187 @@
+{
+  "revisado_utc": "2026-11-02T18:17:04+00:00",
+  "tipo": "diagnostico_sin_extraccion_validada",
+  "pagina_estadisticas": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
+  "reporte_powerbi": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9",
+  "sitio": {
+    "http": 200,
+    "bytes": 87512,
+    "sha256": "076966fe624c4b95437840a7221cc7e30e23cf7881818eb4d0715ddc61a2e090",
+    "enlaces_relevantes": [
+      {
+        "texto": "Boletines",
+        "url": "https://www.sugese.fi.cr/cr/es/estadisticas/boletines.html"
+      },
+      {
+        "texto": "",
+        "url": "https://www.sugese.fi.cr/cr/es/estadisticas/boletines.html"
+      },
+      {
+        "texto": "Aportes​ al BC Bomberos e INEC",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiNTM1NGFiNTYtZTY5Yi00YWYwLWIzZGItZDkyNzI2OWJlYjViIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+      },
+      {
+        "texto": "​Indicadores Resumen",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiZGU5M2JkOTQtNmNkZC00NmQxLThiZjgtZTg0YzQ1MWQ0YjhmIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+      },
+      {
+        "texto": "Indice de Suficiencia de Capital",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiZTRjOGNmZmMtOGM0OS00MTEyLWFjMDAtNzllYjU0YWEwNjFkIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+      },
+      {
+        "texto": "​Información Financiera Sociedades Agencia​",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiYjNmMmNiODMtMGQwNy00NTY1LWIzMWMtMzliNzFlZTZhZmIzIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+      },
+      {
+        "texto": "Información Financiera Sociedades Corredoras",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiNWIzNzFlMjUtNTllYy00NDgxLWJjNWYtYWFmNjlmMzM2OGIyIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+      },
+      {
+        "texto": "Inversiones",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiNzZhYWNlY2ItNTc5NS00N2QwLTk1YTQtZTY4ZGQ1OTI1ZjJkIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+      },
+      {
+        "texto": "Participantes Mercado S​eguros​",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiMjYxNWE5MDktMDA5Yi00NTZkLWIxZjYtMGJkZjBmZjQ2NDI3IiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+      },
+      {
+        "texto": "Pólizas Mercado Seguros",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiN2QzMDBkZTktNzM1MC00MjBkLThkYmUtY2MxYTEwYmRiN2QyIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+      },
+      {
+        "texto": "Primas y siniestros ​",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+      },
+      {
+        "texto": "​Ratio Combinado",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiOGE4OTM2ZDYtZTViOS00ZjIyLTg5MzctNWI5ODRmMGY1ZDBkIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+      },
+      {
+        "texto": "Resultado​ Técnico-Financiero",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiMDk0OGE3NWYtZWYwNy00ZjBjLWIyYTctMDU5OTI4NzY4MjM5IiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+      },
+      {
+        "texto": "Resumen de partidas y estados financieros​",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiNWZkMGQxZDYtMDU0MS00YWZhLTg0NWEtMjZhZmJiNzVmYTYyIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+      },
+      {
+        "texto": "Riesgos del tra​bajo",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiNTJlNGUwYTktYzRiZC00OTZlLTk0OGYtNmRjMDJkM2U0NGJkIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+      },
+      {
+        "texto": "Siniestralidad del SOA",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiMzYxNGQyY2UtMWIyNi00NzdmLTk5OWQtZThkNzc1ODFhMjY0IiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+      },
+      {
+        "texto": "Descargar archivo",
+        "url": "https://www.sugese.fi.cr/content/dam/sugese/estadisticas/estadisticas-hasta-2014/anexo1-participantes-mercado-seguros-2010-2014.xlsx"
+      },
+      {
+        "texto": "Descargar archivo",
+        "url": "https://www.sugese.fi.cr/content/dam/sugese/estadisticas/estadisticas-hasta-2014/anexo3-evolucion-primas-mercado-seguros-2010-2014.xlsx"
+      },
+      {
+        "texto": "Descargar archivo",
+        "url": "https://www.sugese.fi.cr/content/dam/sugese/estadisticas/estadisticas-hasta-2014/anexo5-resumen-partidas-estados-financieros-2010-2014.xlsx"
+      },
+      {
+        "texto": "Descargar archivo",
+        "url": "https://www.sugese.fi.cr/content/dam/sugese/estadisticas/estadisticas-hasta-2014/anexo7-aporte-bc-bomberos-2010-2014.xlsx"
+      },
+      {
+        "texto": "Descargar archivo",
+        "url": "https://www.sugese.fi.cr/content/dam/sugese/estadisticas/estadisticas-hasta-2014/anexo9-primas-siniestros-ramo-mercado-seguros-2010-2014.xlsx"
+      },
+      {
+        "texto": "Descargar archivo",
+        "url": "https://www.sugese.fi.cr/content/dam/sugese/estadisticas/estadisticas-hasta-2014/anexo2-polizas-mercado-seguros-2010-2014.xlsx"
+      },
+      {
+        "texto": "Descargar archivo",
+        "url": "https://www.sugese.fi.cr/content/dam/sugese/estadisticas/estadisticas-hasta-2014/anexo4-evolucion-siniestros-mercado-seguros-2010-2014.xlsx"
+      },
+      {
+        "texto": "Descargar archivo",
+        "url": "https://www.sugese.fi.cr/content/dam/sugese/estadisticas/estadisticas-hasta-2014/anexo6-cartera-inversiones-aseguradoras-2010-2014.xlsx"
+      },
+      {
+        "texto": "Descargar archivo",
+        "url": "https://www.sugese.fi.cr/content/dam/sugese/estadisticas/estadisticas-hasta-2014/anexo8-soa-2010-2014.xlsx"
+      },
+      {
+        "texto": "Descargar archivo",
+        "url": "https://www.sugese.fi.cr/content/dam/sugese/estadisticas/riesgos-del-trabajo/estadisticas-anuales-riesgos-del-trabajo-2021.xlsx"
+      },
+      {
+        "texto": "Descargar archivo",
+        "url": "https://www.sugese.fi.cr/content/dam/sugese/estadisticas/riesgos-del-trabajo/estadisticas-rt2019.xlsx"
+      },
+      {
+        "texto": "Descargar archivo",
+        "url": "https://www.sugese.fi.cr/content/dam/sugese/estadisticas/riesgos-del-trabajo/estadisticas-anuales-rt2017.xlsx"
+      },
+      {
+        "texto": "Descargar archivo",
+        "url": "https://www.sugese.fi.cr/content/dam/sugese/estadisticas/riesgos-del-trabajo/boletin-rt-2017.pdf"
+      },
+      {
+        "texto": "Descargar archivo",
+        "url": "https://www.sugese.fi.cr/content/dam/sugese/estadisticas/riesgos-del-trabajo/estadisticas-anuales-riesgos-del-trabajo-2020.xlsx"
+      },
+      {
+        "texto": "Descargar archivo",
+        "url": "https://www.sugese.fi.cr/content/dam/sugese/estadisticas/riesgos-del-trabajo/estadisticas-anuales-rt2018.xlsx"
+      },
+      {
+        "texto": "Descargar archivo",
+        "url": "https://www.sugese.fi.cr/content/dam/sugese/estadisticas/riesgos-del-trabajo/estadisticas-anuales-rthistorico.xlsx"
+      }
+    ]
+  },
+  "powerbi": {
+    "http": 200,
+    "iframes": 1,
+    "texto_y_controles": [
+      {
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9",
+        "texto": "Show keyboard shortcuts\nShow screen reader tips\nSkip to main content\nPower BI Report\n\nPRIMAS Y SINIESTROS\n\nCuadros\n\nGráficos\n\nPor ramo y aseguradora\nPor ramo y aseguradora porcentual\nPor ramo\nGráfico por aseguradora\nGráfico por ramo\nPor aseguradora\nPor tipo\nPor categoría\nGráfico por tipo\nGráfico por categoría\nPenetración y profundidad\n\nGuía y diccionario\n\nGuía\nDiccionario\n-\n+\n113%\nMicrosoft Power BI\n1of12\nReport Zoomed To 113%",
+        "botones_exportar": 0
+      }
+    ]
+  },
+  "archivos": [
+    {
+      "url": "https://www.sugese.fi.cr/seccion-estadistica/Boletines/boletin_sep_2026.pdf",
+      "http": 404,
+      "tipo": "text/html;charset=utf-8",
+      "firma_pdf": false
+    },
+    {
+      "url": "https://www.sugese.fi.cr/seccion-estadistica/Boletines/boletin_set_2026.pdf",
+      "http": 404,
+      "tipo": "text/html;charset=utf-8",
+      "firma_pdf": false
+    },
+    {
+      "url": "https://www.sugese.fi.cr/seccion-estadistica/Boletines/boletin_ago_2026.pdf",
+      "http": 404,
+      "tipo": "text/html;charset=utf-8",
+      "firma_pdf": false
+    },
+    {
+      "url": "https://www.sugese.fi.cr/seccion-estadistica/Boletines/boletin_jul_2026.pdf",
+      "http": 404,
+      "tipo": "text/html;charset=utf-8",
+      "firma_pdf": false
+    },
+    {
+      "url": "https://www.sugese.fi.cr/seccion-estadistica/Boletines/boletin_jun_2026.pdf",
+      "http": 404,
+      "tipo": "text/html;charset=utf-8",
+      "firma_pdf": false
+    }
+  ],
+  "errores": [],
+  "ingesta_validada": false,
+  "conclusion": "La detección de descargas requiere validación del archivo y su contenido antes de actualizar indicadores. No se publica ningún KPI directamente desde esta prueba."
+}
