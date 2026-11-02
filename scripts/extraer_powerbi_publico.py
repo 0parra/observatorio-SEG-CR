@@ -94,6 +94,13 @@ def main():
   "advertencia":"Datos de primas acumuladas, no de primas individuales del mes. No comprende siniestros ni todas las aseguradoras. Si el reporte cambia su formato, falla sin sobrescribir los datos publicados."
  }
  payload={"meta":metadata,"series":parsed["observaciones"]}
+ if OUT.exists():
+  try:
+   anterior=json.loads(OUT.read_text(encoding="utf-8"))
+   if anterior.get("series")==payload["series"]:
+    print("Sin cambios de cifras oficiales respecto a la versión publicada; no se modifica el archivo.")
+    return
+  except (OSError,ValueError):pass
  OUT.parent.mkdir(parents=True,exist_ok=True)
  OUT.write_text(json.dumps(payload,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
  p2025=parsed["totales"].get("2025-"+latest[-2:])
