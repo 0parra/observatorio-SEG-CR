@@ -1,0 +1,31 @@
+name: Diagnóstico de extracción SUGESE
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 14 * * 1"
+permissions:
+  contents: read
+jobs:
+  investigar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar dependencias de inspección pública
+        run: |
+          python -m pip install --disable-pip-version-check requests beautifulsoup4 playwright
+          python -m playwright install --with-deps chromium
+      - name: Analizar disponibilidad de publicaciones y exportación pública
+        run: python scripts/diagnosticar_extraccion.py
+      - name: Guardar evidencia aunque haya fallos
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-sugese
+          path: |
+            data/diagnostico_extraccion.json
+            tmp/sugese_probe/
+          retention-days: 7
