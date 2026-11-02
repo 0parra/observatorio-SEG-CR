@@ -1,0 +1,906 @@
+{
+  "meta": {
+    "estado": "conciliado_con_totales",
+    "origen": "Cuadro 1 de SUGESE Power BI: primas acumuladas por ramo (datos públicos visibles, sin API privada)",
+    "fuente": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9",
+    "fecha_extraccion_utc": "2026-11-02T18:19:29+00:00",
+    "periodo_maximo": "2026-09",
+    "tipo_serie": "acumulado_anual",
+    "unidad": "millones CRC",
+    "controles": [
+      {
+        "periodo": "2022-09",
+        "total": 817523.68,
+        "suma_ramos_completos": 817523.62,
+        "diferencia": 0.06
+      },
+      {
+        "periodo": "2023-09",
+        "total": 847529.68,
+        "suma_ramos_completos": 847527.47,
+        "diferencia": 2.21
+      },
+      {
+        "periodo": "2024-09",
+        "total": 944810.11,
+        "suma_ramos_completos": 944806.35,
+        "diferencia": 3.76
+      },
+      {
+        "periodo": "2025-09",
+        "total": 973361.06,
+        "suma_ramos_completos": 973224.84,
+        "diferencia": 136.22
+      },
+      {
+        "periodo": "2026-09",
+        "total": 1024084.44,
+        "suma_ramos_completos": 1023696.51,
+        "diferencia": 387.93
+      }
+    ],
+    "filas_omitidas": [
+      {
+        "ramo": "Seguros de asistencias de ramos generales",
+        "unidades_encontradas": 3
+      },
+      {
+        "ramo": "Seguros de asistencias de ramos personales",
+        "unidades_encontradas": 4
+      }
+    ],
+    "nota": "Datos enero-septiembre de cada año, no dato aislado de septiembre. Se omitieron ramos con celdas vacías por falta de posición inequívoca; totales conciliados con margen inferior a 0,5%."
+  },
+  "series": [
+    {
+      "periodo": "2022-09",
+      "aseguradora": "Mercado",
+      "ramo": "Automóvil",
+      "indicador": "primas_emitidas",
+      "valor": 144229.31,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2023-09",
+      "aseguradora": "Mercado",
+      "ramo": "Automóvil",
+      "indicador": "primas_emitidas",
+      "valor": 149582.71,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2024-09",
+      "aseguradora": "Mercado",
+      "ramo": "Automóvil",
+      "indicador": "primas_emitidas",
+      "valor": 212825.97,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2025-09",
+      "aseguradora": "Mercado",
+      "ramo": "Automóvil",
+      "indicador": "primas_emitidas",
+      "valor": 180525.61,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2026-09",
+      "aseguradora": "Mercado",
+      "ramo": "Automóvil",
+      "indicador": "primas_emitidas",
+      "valor": 199070.75,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2022-09",
+      "aseguradora": "Mercado",
+      "ramo": "Vehículos marítimos",
+      "indicador": "primas_emitidas",
+      "valor": 791.29,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2023-09",
+      "aseguradora": "Mercado",
+      "ramo": "Vehículos marítimos",
+      "indicador": "primas_emitidas",
+      "valor": 808.34,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2024-09",
+      "aseguradora": "Mercado",
+      "ramo": "Vehículos marítimos",
+      "indicador": "primas_emitidas",
+      "valor": 1164.83,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2025-09",
+      "aseguradora": "Mercado",
+      "ramo": "Vehículos marítimos",
+      "indicador": "primas_emitidas",
+      "valor": 998.8,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2026-09",
+      "aseguradora": "Mercado",
+      "ramo": "Vehículos marítimos",
+      "indicador": "primas_emitidas",
+      "valor": 772.82,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2022-09",
+      "aseguradora": "Mercado",
+      "ramo": "Aviación",
+      "indicador": "primas_emitidas",
+      "valor": 801.65,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2023-09",
+      "aseguradora": "Mercado",
+      "ramo": "Aviación",
+      "indicador": "primas_emitidas",
+      "valor": 887.15,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2024-09",
+      "aseguradora": "Mercado",
+      "ramo": "Aviación",
+      "indicador": "primas_emitidas",
+      "valor": 911.76,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2025-09",
+      "aseguradora": "Mercado",
+      "ramo": "Aviación",
+      "indicador": "primas_emitidas",
+      "valor": 680.71,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2026-09",
+      "aseguradora": "Mercado",
+      "ramo": "Aviación",
+      "indicador": "primas_emitidas",
+      "valor": 593.26,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2022-09",
+      "aseguradora": "Mercado",
+      "ramo": "Mercancías transportadas",
+      "indicador": "primas_emitidas",
+      "valor": 8514.91,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2023-09",
+      "aseguradora": "Mercado",
+      "ramo": "Mercancías transportadas",
+      "indicador": "primas_emitidas",
+      "valor": 8778.32,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2024-09",
+      "aseguradora": "Mercado",
+      "ramo": "Mercancías transportadas",
+      "indicador": "primas_emitidas",
+      "valor": 10150.46,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2025-09",
+      "aseguradora": "Mercado",
+      "ramo": "Mercancías transportadas",
+      "indicador": "primas_emitidas",
+      "valor": 8972.58,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2026-09",
+      "aseguradora": "Mercado",
+      "ramo": "Mercancías transportadas",
+      "indicador": "primas_emitidas",
+      "valor": 8318.4,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2022-09",
+      "aseguradora": "Mercado",
+      "ramo": "Incendio y líneas aliadas",
+      "indicador": "primas_emitidas",
+      "valor": 90049.39,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2023-09",
+      "aseguradora": "Mercado",
+      "ramo": "Incendio y líneas aliadas",
+      "indicador": "primas_emitidas",
+      "valor": 83224.04,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2024-09",
+      "aseguradora": "Mercado",
+      "ramo": "Incendio y líneas aliadas",
+      "indicador": "primas_emitidas",
+      "valor": 85872.33,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2025-09",
+      "aseguradora": "Mercado",
+      "ramo": "Incendio y líneas aliadas",
+      "indicador": "primas_emitidas",
+      "valor": 92827.76,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2026-09",
+      "aseguradora": "Mercado",
+      "ramo": "Incendio y líneas aliadas",
+      "indicador": "primas_emitidas",
+      "valor": 91360.25,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2022-09",
+      "aseguradora": "Mercado",
+      "ramo": "Otros daños a los bienes",
+      "indicador": "primas_emitidas",
+      "valor": 33369.23,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2023-09",
+      "aseguradora": "Mercado",
+      "ramo": "Otros daños a los bienes",
+      "indicador": "primas_emitidas",
+      "valor": 33582.6,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2024-09",
+      "aseguradora": "Mercado",
+      "ramo": "Otros daños a los bienes",
+      "indicador": "primas_emitidas",
+      "valor": 40534.67,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2025-09",
+      "aseguradora": "Mercado",
+      "ramo": "Otros daños a los bienes",
+      "indicador": "primas_emitidas",
+      "valor": 46120.06,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2026-09",
+      "aseguradora": "Mercado",
+      "ramo": "Otros daños a los bienes",
+      "indicador": "primas_emitidas",
+      "valor": 48816.4,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2022-09",
+      "aseguradora": "Mercado",
+      "ramo": "Responsabilidad civil",
+      "indicador": "primas_emitidas",
+      "valor": 17661.79,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2023-09",
+      "aseguradora": "Mercado",
+      "ramo": "Responsabilidad civil",
+      "indicador": "primas_emitidas",
+      "valor": 18171.25,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2024-09",
+      "aseguradora": "Mercado",
+      "ramo": "Responsabilidad civil",
+      "indicador": "primas_emitidas",
+      "valor": 17400.14,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2025-09",
+      "aseguradora": "Mercado",
+      "ramo": "Responsabilidad civil",
+      "indicador": "primas_emitidas",
+      "valor": 19185.51,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2026-09",
+      "aseguradora": "Mercado",
+      "ramo": "Responsabilidad civil",
+      "indicador": "primas_emitidas",
+      "valor": 21082.63,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2022-09",
+      "aseguradora": "Mercado",
+      "ramo": "Crédito",
+      "indicador": "primas_emitidas",
+      "valor": 161.35,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2023-09",
+      "aseguradora": "Mercado",
+      "ramo": "Crédito",
+      "indicador": "primas_emitidas",
+      "valor": 464.95,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2024-09",
+      "aseguradora": "Mercado",
+      "ramo": "Crédito",
+      "indicador": "primas_emitidas",
+      "valor": 480.96,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2025-09",
+      "aseguradora": "Mercado",
+      "ramo": "Crédito",
+      "indicador": "primas_emitidas",
+      "valor": 626.37,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2026-09",
+      "aseguradora": "Mercado",
+      "ramo": "Crédito",
+      "indicador": "primas_emitidas",
+      "valor": 557.63,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2022-09",
+      "aseguradora": "Mercado",
+      "ramo": "Caución",
+      "indicador": "primas_emitidas",
+      "valor": 2672.2,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2023-09",
+      "aseguradora": "Mercado",
+      "ramo": "Caución",
+      "indicador": "primas_emitidas",
+      "valor": 2515.85,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2024-09",
+      "aseguradora": "Mercado",
+      "ramo": "Caución",
+      "indicador": "primas_emitidas",
+      "valor": 2970.23,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2025-09",
+      "aseguradora": "Mercado",
+      "ramo": "Caución",
+      "indicador": "primas_emitidas",
+      "valor": 3600.45,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2026-09",
+      "aseguradora": "Mercado",
+      "ramo": "Caución",
+      "indicador": "primas_emitidas",
+      "valor": 4271.81,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2022-09",
+      "aseguradora": "Mercado",
+      "ramo": "Pérdidas pecuniarias",
+      "indicador": "primas_emitidas",
+      "valor": 29770.71,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2023-09",
+      "aseguradora": "Mercado",
+      "ramo": "Pérdidas pecuniarias",
+      "indicador": "primas_emitidas",
+      "valor": 33880.15,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2024-09",
+      "aseguradora": "Mercado",
+      "ramo": "Pérdidas pecuniarias",
+      "indicador": "primas_emitidas",
+      "valor": 30415.69,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2025-09",
+      "aseguradora": "Mercado",
+      "ramo": "Pérdidas pecuniarias",
+      "indicador": "primas_emitidas",
+      "valor": 33246.82,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2026-09",
+      "aseguradora": "Mercado",
+      "ramo": "Pérdidas pecuniarias",
+      "indicador": "primas_emitidas",
+      "valor": 32517.81,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2022-09",
+      "aseguradora": "Mercado",
+      "ramo": "Agrícolas y pecuarios",
+      "indicador": "primas_emitidas",
+      "valor": 258.66,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2023-09",
+      "aseguradora": "Mercado",
+      "ramo": "Agrícolas y pecuarios",
+      "indicador": "primas_emitidas",
+      "valor": 178.66,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2024-09",
+      "aseguradora": "Mercado",
+      "ramo": "Agrícolas y pecuarios",
+      "indicador": "primas_emitidas",
+      "valor": 120.18,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2025-09",
+      "aseguradora": "Mercado",
+      "ramo": "Agrícolas y pecuarios",
+      "indicador": "primas_emitidas",
+      "valor": 64.18,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2026-09",
+      "aseguradora": "Mercado",
+      "ramo": "Agrícolas y pecuarios",
+      "indicador": "primas_emitidas",
+      "valor": 131.28,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2022-09",
+      "aseguradora": "Mercado",
+      "ramo": "Seguro obligatorio de automóviles (SOA)",
+      "indicador": "primas_emitidas",
+      "valor": 61660.9,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2023-09",
+      "aseguradora": "Mercado",
+      "ramo": "Seguro obligatorio de automóviles (SOA)",
+      "indicador": "primas_emitidas",
+      "valor": 64890.25,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2024-09",
+      "aseguradora": "Mercado",
+      "ramo": "Seguro obligatorio de automóviles (SOA)",
+      "indicador": "primas_emitidas",
+      "valor": 71291.69,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2025-09",
+      "aseguradora": "Mercado",
+      "ramo": "Seguro obligatorio de automóviles (SOA)",
+      "indicador": "primas_emitidas",
+      "valor": 79154.25,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2026-09",
+      "aseguradora": "Mercado",
+      "ramo": "Seguro obligatorio de automóviles (SOA)",
+      "indicador": "primas_emitidas",
+      "valor": 93983.34,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2022-09",
+      "aseguradora": "Mercado",
+      "ramo": "Vida",
+      "indicador": "primas_emitidas",
+      "valor": 156089.61,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2023-09",
+      "aseguradora": "Mercado",
+      "ramo": "Vida",
+      "indicador": "primas_emitidas",
+      "valor": 159329.74,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2024-09",
+      "aseguradora": "Mercado",
+      "ramo": "Vida",
+      "indicador": "primas_emitidas",
+      "valor": 151385.76,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2025-09",
+      "aseguradora": "Mercado",
+      "ramo": "Vida",
+      "indicador": "primas_emitidas",
+      "valor": 153411.33,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2026-09",
+      "aseguradora": "Mercado",
+      "ramo": "Vida",
+      "indicador": "primas_emitidas",
+      "valor": 155263.62,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2022-09",
+      "aseguradora": "Mercado",
+      "ramo": "Seguro obligatorio de riesgos del trabajo (SRT)",
+      "indicador": "primas_emitidas",
+      "valor": 131665.27,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2023-09",
+      "aseguradora": "Mercado",
+      "ramo": "Seguro obligatorio de riesgos del trabajo (SRT)",
+      "indicador": "primas_emitidas",
+      "valor": 147304.5,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2024-09",
+      "aseguradora": "Mercado",
+      "ramo": "Seguro obligatorio de riesgos del trabajo (SRT)",
+      "indicador": "primas_emitidas",
+      "valor": 160525.11,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2025-09",
+      "aseguradora": "Mercado",
+      "ramo": "Seguro obligatorio de riesgos del trabajo (SRT)",
+      "indicador": "primas_emitidas",
+      "valor": 171187.93,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2026-09",
+      "aseguradora": "Mercado",
+      "ramo": "Seguro obligatorio de riesgos del trabajo (SRT)",
+      "indicador": "primas_emitidas",
+      "valor": 178155.35,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2022-09",
+      "aseguradora": "Mercado",
+      "ramo": "Accidentes",
+      "indicador": "primas_emitidas",
+      "valor": 21306.06,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2023-09",
+      "aseguradora": "Mercado",
+      "ramo": "Accidentes",
+      "indicador": "primas_emitidas",
+      "valor": 20057.52,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2024-09",
+      "aseguradora": "Mercado",
+      "ramo": "Accidentes",
+      "indicador": "primas_emitidas",
+      "valor": 18508.39,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2025-09",
+      "aseguradora": "Mercado",
+      "ramo": "Accidentes",
+      "indicador": "primas_emitidas",
+      "valor": 19765.01,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2026-09",
+      "aseguradora": "Mercado",
+      "ramo": "Accidentes",
+      "indicador": "primas_emitidas",
+      "valor": 20581.52,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2022-09",
+      "aseguradora": "Mercado",
+      "ramo": "Salud",
+      "indicador": "primas_emitidas",
+      "valor": 118521.29,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2023-09",
+      "aseguradora": "Mercado",
+      "ramo": "Salud",
+      "indicador": "primas_emitidas",
+      "valor": 123871.44,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2024-09",
+      "aseguradora": "Mercado",
+      "ramo": "Salud",
+      "indicador": "primas_emitidas",
+      "valor": 140248.18,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2025-09",
+      "aseguradora": "Mercado",
+      "ramo": "Salud",
+      "indicador": "primas_emitidas",
+      "valor": 162857.47,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2026-09",
+      "aseguradora": "Mercado",
+      "ramo": "Salud",
+      "indicador": "primas_emitidas",
+      "valor": 168219.64,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2022-09",
+      "aseguradora": "Mercado",
+      "ramo": "Todos",
+      "indicador": "primas_emitidas",
+      "valor": 817523.68,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2023-09",
+      "aseguradora": "Mercado",
+      "ramo": "Todos",
+      "indicador": "primas_emitidas",
+      "valor": 847529.68,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2024-09",
+      "aseguradora": "Mercado",
+      "ramo": "Todos",
+      "indicador": "primas_emitidas",
+      "valor": 944810.11,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2025-09",
+      "aseguradora": "Mercado",
+      "ramo": "Todos",
+      "indicador": "primas_emitidas",
+      "valor": 973361.06,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    },
+    {
+      "periodo": "2026-09",
+      "aseguradora": "Mercado",
+      "ramo": "Todos",
+      "indicador": "primas_emitidas",
+      "valor": 1024084.44,
+      "unidad": "millones CRC",
+      "tipo_serie": "acumulado_anual",
+      "fuente_url": "https://app.powerbi.com/view?r=eyJrIjoiNzY4OWNlNjItM2Y5ZC00ZDUxLWI3ODgtMGNmZTE1M2MyNmIwIiwidCI6IjYxOGQwYTQ1LTI1YTYtNDYxOC05ZjgwLThmNzBhNDM1ZWU1MiJ9"
+    }
+  ]
+}
