@@ -1,14 +1,14 @@
 {
-  "revision_utc": "2026-11-02T22:28:31+00:00",
+  "revision_utc": "2026-11-03T20:18:14+00:00",
   "fuente": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
   "estado": "accesible",
-  "sha256_indice": "874eb01c028869ee2af6e489e46485774df79a823ae43900d12c99777aafe662",
+  "sha256_indice": "70205a718aebfd30024dcdb44e9f2f26e8bfe23f5afc5e05630433c9ca934346",
   "fuentes_consultadas": [
     {
       "nombre": "Índice de estadísticas",
       "url": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
       "resultado": "accesible",
-      "sha256": "874eb01c028869ee2af6e489e46485774df79a823ae43900d12c99777aafe662"
+      "sha256": "70205a718aebfd30024dcdb44e9f2f26e8bfe23f5afc5e05630433c9ca934346"
     },
     {
       "nombre": "Mapa público del sitio",
