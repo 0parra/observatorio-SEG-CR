@@ -1,20 +1,20 @@
 {
-  "revision_utc": "2026-11-05T20:50:36+00:00",
+  "revision_utc": "2026-11-06T20:06:03+00:00",
   "fuente": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
   "estado": "accesible",
-  "sha256_indice": "277878f2838b0838013064fa29e95484eb228efd1cd23212aad3992022959ba1",
+  "sha256_indice": "34055f98a1e4aecfe240f2458454863e27904db783c8ca955f332bba0beb1576",
   "fuentes_consultadas": [
     {
       "nombre": "Índice de estadísticas",
       "url": "https://www.sugese.fi.cr/cr/es/estadisticas.html",
       "resultado": "accesible",
-      "sha256": "277878f2838b0838013064fa29e95484eb228efd1cd23212aad3992022959ba1"
+      "sha256": "34055f98a1e4aecfe240f2458454863e27904db783c8ca955f332bba0beb1576"
     },
     {
       "nombre": "Mapa público del sitio",
       "url": "https://www.sugese.fi.cr/sitemap.xml",
       "resultado": "accesible",
-      "sha256": "c65fe0e9be51b865c436bd6f306d64de89c059fd0c728660c86a80af0ca86847"
+      "sha256": "44b4de86f060f6bd1af93ac551c1b5bbc7692d31cd04d99e9fc757a7b9daedce"
     },
     {
       "nombre": "Boletín diciembre 2025",
